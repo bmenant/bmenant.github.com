@@ -1,0 +1,33 @@
+---
+layout: nil
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title>Le Benj’ Blog</title>
+  <link href="http://blog.menant-benjamin.fr/"/>
+  <link type="application/atom+xml" rel="self" href="http://blog.menant-benjamin.fr/index.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://blog.menant-benjamin.fr/</id>
+  <author>
+    <name>Benjamin MENANT</name>
+    <email>benjamin.menant@gmail.com</email>
+  </author>
+
+  {% for post in site.posts %}
+  {% if post.standalone == null %}
+  <entry>
+    <id>http://blog.menant-benjamin.fr/{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://blog.menant-benjamin.fr/{{ post.url }}"/>
+    <title>{{ post.title }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Benjamin MENANT</name>
+      <uri>http://blog.menant-benjamin.fr/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+  {% endif %}
+  {% endfor %}
+ 
+</feed>
