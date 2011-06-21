@@ -23,49 +23,65 @@
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body>
+	<header>
+		<h1><a href="/" title="Page d’accueil">Le Benj’ Blog</a></h1>
 
-		<!-- TODO You have to do the work!
-		<header>
-				<a href="http://twitter.com/paulrouget" class="twitter-follow-button" data-button="grey" data-width="300px" data-text-color="#FAE50B" data-link-color="#FF0066">Follow @paulrouget</a><script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-				<span id="rss-button">
-						<svg viewbox="30 30 190 190">
-								<circle cx="68" cy="189" r="24"/>
-								<path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z"/>
-								<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z"/>
-						</svg>
-						Subscribe <a href="http://paulrouget.com/index.xml"><span>RSS</span></a></span>
-		</header>
+		<nav id="acces-rapide">
+			<h2 class="visuallyhidden">Accès rapides</h2>
+			<ul>
+				<li><a href="#contenu">Contenu</a></li>
+				<li><a href="#navigation">Navigation</a></li>
+			</ul>
+		</nav>
 
-		<article>
-				{{ content }}
+		<p class="description">
+			Le Benj’ blog reccueille les dialogues de personnages imaginaires.
+			Ils y échangent librement et ouvertement, principalement à propos du Web,
+			de ses technologies et de ses usages.
+		</p>
 
-				<footer>
-						<a href="http://paulrouget.com">
-								<img src="/assets/twitter_avatar.jpg"> Paul Rouget
-						</a>
-				</footer>
+		<nav id="navigation">
+			<h2 class="visuallyhidden">Navigation</h2>
+			<ul>
+				<!-- Lien vers la liste des billets -->
+				<li><a	href="/#contenu"
+								title="Liste de tous les dialogues publiés">Dialogues</a></li>
+				<!-- Lien vers le portail -->
+				<li><a	href="http://menant-benjamin.fr/"
+								title="Quelques informations à propos de l’auteur">Benj’</a></li>
+				<!-- Flux de syndication -->
+				<li class="bouton-rss"><a href="/index.xml">
+					<svg viewbox="30 30 190 190">
+						<circle cx="68" cy="189" r="24"/>
+						<path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z"/>
+						<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z"/>
+					</svg>
+					Abonnement RSS
+				</a></li>
+			</ul>
+		</nav>
+	</header>
 
-				<div id="meta">
-						<span id="date">{{ page.date | date_to_string}} - </span>
-						<a onclick="window.open('http://twitter.com/share?text={{page.title}}&via=paulrouget&url=http%3A%2F%2Fpaulrouget.com%2F{{page.url | xml_escape}}','','width=400,height=300,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;" href="http://twitter.com/share?text={{page.title}}&via=paulrouget&url=http%3A%2F%2Fpaulrouget.com%2F{{page.url | xml_escape}}" id="twitter" title="tweet this" target="_blank">
-								<span>tweet&nbsp;this</span>
-								<img src="/assets/twitter.png">
-						</a>
-						{% if page.comments %}
-						<a href="#comments" id="showcomments" onclick='document.getElementById("comments").className="showme";document.getElementById("disqus_script").src="http://disqus.com/forums/paulrouget/embed.js"'>show comments</a>
-						{% endif %}
-				</div>
-		</article>
-	-->
-	<!-- TODO Do you really want comments?
+	<article id="contenu">
+		{{ content }}
+
+		<!-- TODO Do you really want comments? -->
 		{% if page.comments %}
-		<!-- comments --><!--
-		<div id="comments">
-				<h1 class="wooot">Comments</h1>
-				<div id="disqus_thread"></div><script id="disqus_script"></script>
-		</div>
+		<section id ="commentaires" class="hidden">
+			<h1>Commentaires</h1>
+			<div id="disqus_thread"></div><script id="disqus_script"></script>
+		</section>
 		{% endif %}
-	-->
+
+		<footer id="meta">
+				<time id="date" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+
+				<!-- TODO Set the src attribute for disqus… -->
+				{% if page.comments %}
+				<a href="#comments" id="showcomments" onclick='document.getElementById("commentaires").className="showme";document.getElementById("disqus_script").src=""'>Afficher les commentaires</a>
+				{% endif %}
+		</footer>
+	</article>
 
 	<!--[if lt IE 7 ]>
 	<script src="js/libs/dd_belatedpng.js"></script>
