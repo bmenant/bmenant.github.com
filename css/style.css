@@ -82,11 +82,38 @@ a:hover { color: #036; }
  * @todo Do the work!
 */
 
-.showme {
-/* @todo transition */
+/**
+ * Post's content
+ * =post =content
+ */
+
+
+  /* Comments =comments */
+  .showme {
+    display: block;
+    visibility: visible;
+    /* @todo Add transition, here */
+  }
+
+
+/**
+ * Header =header
+ */
+
+
+/**
+ * Footer =footer
+ */
+
+
+/**
+ * Common styles for Header and Footer
+ * =header =footer
+ */
+body > header svg,
+body > footer svg {
+  height: 1em;
 }
-
-
 
 
 
