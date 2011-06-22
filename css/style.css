@@ -104,7 +104,9 @@ a:hover { color: #036; }
 /**
  * Footer =footer
  */
-
+body > footer dl > * {
+  display: inline;
+}
 
 /**
  * Common styles for Header and Footer
@@ -112,7 +114,7 @@ a:hover { color: #036; }
  */
 body > header svg,
 body > footer svg {
-  height: 1em;
+  height: 0.9em;
 }
 
 
