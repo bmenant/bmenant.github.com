@@ -17,8 +17,8 @@ layout: nil
   {% for post in site.posts %}
   {% if post.standalone == null %}
   <entry>
-    <id>http://blog.menant-benjamin.fr/{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://blog.menant-benjamin.fr/{{ post.url }}"/>
+    <id>http://blog.menant-benjamin.fr{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://blog.menant-benjamin.fr{{ post.url }}"/>
     <title>{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
@@ -29,5 +29,5 @@ layout: nil
   </entry>
   {% endif %}
   {% endfor %}
- 
+
 </feed>

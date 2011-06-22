@@ -10,7 +10,7 @@ title: Le Benj’ Blog
 		<ul>
 			{% for post in site.posts limit:100 %}
 			{% if post.standalone == null %}
-			<li><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time><a href="{{ post.url }}">{{ post.title }}</a>, avec {{ post.characters | array_to_sentence_string }}.
+			<li><time datetime="{{ post.date }}">{{ post.year }}</time><a href="{{ post.url }}">{{ post.title }}</a>, avec {{ post.characters | array_to_sentence_string }}.
 			{% endif %}
 			{% endfor %}
 		</ul>
