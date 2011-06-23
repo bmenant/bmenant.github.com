@@ -29,3 +29,5 @@ module Jekyll
     end
   end
 end
+
+Liquid::Template.register_filter('array_to_locale_sentence_string', Jekyll::array_to_locale_sentence_string)
