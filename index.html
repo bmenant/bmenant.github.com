@@ -14,12 +14,12 @@ title: Le Benj’ Blog
 				<time datetime="{{ post.date }}">{{ page.date | date: "%d/%m/%Y" }}</time>
 				<a href="{{ post.url }}">{{ post.title }}</a>, avec
 				{% for character in post.characters %}
-					{% if forloop.first %}
-					{{ character }}
-					{% elseif forloop.last %}
-					et {{ character }}.
+					{% if forloop.rindex0 == 1 %}
+					{{ character }} et
+					{% elsif forloop.last %}
+					{{ character }}.
 					{% else %}
-					, {{ character }}
+					{{ character }},
 					{% endif %}
 				{% endfor %}
 			</li>
