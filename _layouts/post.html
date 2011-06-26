@@ -12,7 +12,8 @@
 		{% endif %}
 
 		<footer id="meta">
-			<time id="date" datetime="{{ page.date }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+			<time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+			{{ page.date | date: "%d/%m/%Y" }}</time>
 
 			<!-- TODO Set the src attribute for disqus… -->
 			{% if page.comments %}
