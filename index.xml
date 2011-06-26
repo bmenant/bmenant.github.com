@@ -11,19 +11,19 @@ layout: nil
   <id>http://blog.menant-benjamin.fr/</id>
   <author>
     <name>Benjamin MENANT</name>
-    <email>benjamin.menant@gmail.com</email>
+    <email>trop-de-spam@this-is-not-a-real.mail</email>
   </author>
 
   {% for post in site.posts %}
   {% if post.standalone == null %}
   <entry>
-    <id>http://blog.menant-benjamin.fr{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://blog.menant-benjamin.fr{{ post.url }}"/>
+    <id>http://blog.menant-benjamin.fr{{ post.id }}/</id>
+    <link type="text/html" rel="alternate" href="http://blog.menant-benjamin.fr{{ post.url }}/"/>
     <title>{{ post.title }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Benjamin MENANT</name>
-      <uri>http://blog.menant-benjamin.fr/</uri>
+      <uri>http://menant-benjamin.fr/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>

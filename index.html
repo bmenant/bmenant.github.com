@@ -11,17 +11,15 @@ title: Le Benj’ Blog
 			{% for post in site.posts limit:100 %}
 			{% if post.standalone == null %}
 			<li>
-				<time datetime="{{ post.date }}">{{ page.date | date: "%d/%m/%Y" }}</time>
-				<a href="{{ post.url }}">{{ post.title }}</a>, avec
+				<a href="{{ post.url }}/">{{ post.title }}</a>
+				<span class="visuallyhidden">, avec</span>
 				{% for character in post.characters %}
-					{% if forloop.rindex0 == 1 %}
-					{{ character }} et
-					{% elsif forloop.last %}
-					{{ character }}.
-					{% else %}
-					{{ character }},
-					{% endif %}
+					<span class="{{ character | downcase | replace: ' ', '-' }}">
+						{{ character }}{% if forloop.rindex0 == 1 %} et {% elsif forloop.last %}.{% else %}, {% endif %}
+					</span>
 				{% endfor %}
+				<div>(Publié le <time datetime="{{ post.date | date: "%Y-%m-%d" }}">
+				{{ post.date | date: "%d/%m/%Y" }}</time>)</div>
 			</li>
 			{% endif %}
 			{% endfor %}
