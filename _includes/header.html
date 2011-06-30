@@ -46,7 +46,7 @@
 
 		<p class="description">
 			Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement,
-			à propos de tout, de rien…
+			à propos du Web, de tout et de rien…
 		</p>
 
 		<nav id="navigation">
@@ -54,24 +54,19 @@
 			<ul>
 				<!-- Lien vers la liste des billets -->
 				{% if page.url == '/index.html' %}
-				<li><a	class="active" href="#contenu"
-								title="Liste de tous les dialogues publiés">Dialogues</a></li>
+				<li class="contenu active">
+					<a href="#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
 				{% else %}
-				<li><a	href="/#contenu"
-								title="Liste de tous les dialogues publiés">Dialogues</a></li>
+				<li class="contenu">
+					<a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
 				{% endif %}
 				<!-- Lien vers le portail -->
-				<li><a	href="http://menant-benjamin.fr/"
-								title="Quelques informations à propos de l’auteur">Benj’</a></li>
+				<li class="perso">
+					<a	href="http://menant-benjamin.fr/"
+							title="Quelques informations à propos de l’auteur">Benj’</a></li>
 				<!-- Flux de syndication -->
-				<li class="bouton-rss"><a href="/index.xml">
-					<svg viewbox="30 30 190 190">
-						<circle cx="68" cy="189" r="24"/>
-						<path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z"/>
-						<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z"/>
-					</svg>
-					Abonnement RSS
-				</a></li>
+				<li class="rss">
+					<a href="/index.xml" class="has-icon">Abonnement RSS</a></li>
 			</ul>
 		</nav>
 	</header>
