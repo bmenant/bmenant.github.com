@@ -5,68 +5,69 @@
 <!--[if IE 9 ]>    <html lang="fr" class="no-js ie9" dir="ltr"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--> <html lang="fr" class="no-js" dir="ltr"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	{% if page.url == '/index.html' %}
-	<title>Le Benj’ Blog, dialogues à propos du Web, de tout et de rien</title>
-	<meta name="description" content="Des personnages imaginaires dialoguent à propos du Web,
-		de ses technologies, de ses usages et d’autres choses, selon les humeurs." />
-	<link rel="alternate" type="application/atom+xml" href="/index.xml" />
-	{% else %}
+  {% if page.url == '/index.html' %}
+  <title>Le Benj’ Blog, dialogues à propos du Web, de tout et de rien</title>
+  <meta name="description" content="Des personnages imaginaires dialoguent à propos du Web,
+    de ses technologies, de ses usages et d’autres choses, selon les humeurs." />
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" />
+  {% else %}
   <title>Le Benj’ Blog, {{ page.title }}</title>
-	<meta name="description" content="{{ page.description }}" />
-	{% endif %}
+  <meta name="description" content="{{ page.description }}" />
+  {% endif %}
   <meta name="author" content="Benjamin MENANT" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link href='http://fonts.googleapis.com/css?family=Neucha&subset=latin&v2' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="/css/style.css?v=1" />
-	<link rel="author" href="/humans.txt" />
+  <link rel="author" href="/humans.txt" />
 
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body class="clearfix">
-	<header id="header">
-		{% if page.url == '/index.html' %}
-		<h1>Le Benj’ Blog</h1>
-		{% else %}
-		<div class="site-title"><a href="/" title="Page d’accueil">Le Benj’ Blog</a></div>
-		{% endif %}
+  <header id="header">
+    {% if page.url == '/index.html' %}
+    <h1>Le Benj’ Blog</h1>
+    {% else %}
+    <div class="site-title"><a href="/" title="Page d’accueil">Le Benj’ Blog</a></div>
+    {% endif %}
 
-		<nav id="acces-rapide" class="visuallyhidden">
-			<h2>Accès rapides</h2>
-			<ul>
-				<li><a href="#contenu">Contenu</a></li>
-				<li><a href="#navigation">Navigation</a></li>
-			</ul>
-		</nav>
+    <nav id="acces-rapide" class="visuallyhidden">
+      <h2>Accès rapides</h2>
+      <ul>
+        <li><a href="#contenu">Contenu</a></li>
+        <li><a href="#navigation">Navigation</a></li>
+      </ul>
+    </nav>
 
-		<p class="description">
-			Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement,
-			à propos du Web, de tout et de rien…
-		</p>
+    <p class="description">
+      Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement,
+      à propos du Web, de tout et de rien…
+    </p>
 
-		<nav id="navigation">
-			<h2 class="visuallyhidden">Navigation</h2>
-			<ul>
-				<!-- Lien vers la liste des billets -->
-				{% if page.url == '/index.html' %}
-				<li class="contenu active">
-					<a href="#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
-				{% else %}
-				<li class="contenu">
-					<a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
-				{% endif %}
-				<!-- Lien vers le portail -->
-				<li class="perso">
-					<a	href="http://menant-benjamin.fr/"
-							title="Quelques informations à propos de l’auteur">Benj’</a></li>
-				<!-- Flux de syndication -->
-				<li class="rss">
-					<a href="/index.xml" class="has-icon">Abonnement RSS</a></li>
-			</ul>
-		</nav>
-	</header>
+    <nav id="navigation">
+      <h2 class="visuallyhidden">Navigation</h2>
+      <ul>
+        <!-- Lien vers la liste des billets -->
+        {% if page.url == '/index.html' %}
+        <li class="contenu active">
+          <a href="#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
+        {% else %}
+        <li class="contenu">
+          <a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
+        {% endif %}
+        <!-- Lien vers le portail -->
+        <li class="perso">
+          <a  href="http://menant-benjamin.fr/"
+              title="Quelques informations à propos de l’auteur">Benj’</a></li>
+        <!-- Flux de syndication -->
+        <li class="rss">
+          <a href="/index.xml" class="has-icon">Abonnement RSS</a></li>
+      </ul>
+    </nav>
+  </header>

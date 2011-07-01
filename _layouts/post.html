@@ -1,25 +1,24 @@
-
 {% include header.html %}
 
-	<article id="contenu">
-		{{ content }}
+  <article id="contenu">
+    {{ content }}
 
-		{% if page.comments %}
-		<section id ="commentaires" class="hidden">
-			<h1>Commentaires</h1>
-			<div id="disqus_thread"></div><script id="disqus_script"></script>
-		</section>
-		{% endif %}
+    {% if page.comments %}
+    <section id ="commentaires" class="hidden">
+      <h1>Commentaires</h1>
+      <div id="disqus_thread"></div><script id="disqus_script"></script>
+    </section>
+    {% endif %}
 
-		<footer id="meta">
-			<time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-			{{ page.date | date: "%d/%m/%Y" }}</time>
+    <footer id="meta">
+      <time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%d/%m/%Y" }}</time>
 
-			<!-- TODO Set the src attribute for disqus… -->
-			{% if page.comments %}
-			<a href="#comments" id="showcomments" onclick='document.getElementById("commentaires").className="showme";document.getElementById("disqus_script").src=""'>Afficher les commentaires</a>
-			{% endif %}
-		</footer>
-	</article>
+      <!-- TODO Set the src attribute for disqus… -->
+      {% if page.comments %}
+      <a href="#comments" id="showcomments" onclick='document.getElementById("commentaires").className="showme";document.getElementById("disqus_script").src=""'>Afficher les commentaires</a>
+      {% endif %}
+    </footer>
+  </article>
 
 {% include footer.html %}
