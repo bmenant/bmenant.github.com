@@ -1,6 +1,6 @@
 {% include header.html %}
 
-  <article id="contenu">
+  <article id="contenu"><div>
     {{ content }}
 
     {% if page.comments %}
@@ -19,6 +19,6 @@
       <a href="#comments" id="showcomments" onclick='document.getElementById("commentaires").className="showme";document.getElementById("disqus_script").src=""'>Afficher les commentaires</a>
       {% endif %}
     </footer>
-  </article>
+  </div></article>
 
 {% include footer.html %}
