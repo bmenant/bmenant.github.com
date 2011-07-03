@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="550"
+   height="550"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="sechas.svg"
+   style="enable-background:new">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5037"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5039" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4648"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4120"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4096"
+       is_visible="true" />
+    <filter
+       inkscape:collect="always"
+       id="filter3871"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         inkscape:collect="always"
+         mode="screen"
+         in2="BackgroundImage"
+         id="feBlend3873" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3857"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.9"
+         id="feGaussianBlur3859" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3857-1">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.9"
+         id="feGaussianBlur3859-5" />
+    </filter>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-8"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-3"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-2"
+       is_visible="true" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.23336394"
+     inkscape:cx="854.10808"
+     inkscape:cy="679.38366"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1123"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3005"
+       empspacing="5"
+       visible="true"
+       enabled="false"
+       snapvisiblegridlinesonly="true"
+       dotted="true" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid5158"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="600px"
+       spacingy="600px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Chat"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-502.36218)"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Taupe"
+     style="display:inline"
+     transform="translate(0,50)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Cosmonaute"
+     transform="translate(0,50)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Robot"
+     style="display:inline;filter:url(#filter3871)"
+     transform="translate(0,50)">
+    <g
+       id="g5134"
+       transform="translate(-1276.6097,-9.0516408)">
+      <rect
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         y="357.80164"
+         x="1506.6097"
+         height="30"
+         width="90"
+         id="rect3853"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <g
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         transform="matrix(-1,0,0,-1,1185.2357,1816.4275)"
+         id="g3862">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:31.44000053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3857)"
+           id="rect3781-3"
+           width="90"
+           height="90"
+           x="-320"
+           y="1550"
+           transform="matrix(0.95419847,0,0,0.95419847,-13.969468,71.679386)" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m -306.37405,1563.6259 0,60 60,-60 z"
+           id="path3855"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         transform="matrix(-1,0,0,-1,1558.6708,1885.7405)"
+         id="g3898">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:31.44000053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3857-1)"
+           id="rect3781-3-3"
+           width="90"
+           height="90"
+           x="-320"
+           y="1550"
+           transform="matrix(0.95419847,0,0,0.95419847,179.46565,140.99237)" />
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3871)"
+           d="m -112.93893,1632.9389 0,60 60,-60 z"
+           id="path3855-9"
+           inkscape:connector-curvature="0" />
+      </g>
+      <rect
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         y="102.80164"
+         x="1344.4222"
+         height="360"
+         width="414.375"
+         id="rect3916"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         transform="matrix(0.74999998,0,0,0.74999998,2526.6097,350.30163)"
+         d="m -1280,-440 c 0,11.04569 -8.9543,20 -20,20 -11.0457,0 -20,-8.95431 -20,-20 0,-11.04569 8.9543,-20 20,-20 11.0457,0 20,8.95431 20,20 z"
+         sodipodi:ry="20"
+         sodipodi:rx="20"
+         sodipodi:cy="-440"
+         sodipodi:cx="-1300"
+         id="path4210"
+         style="fill:none;stroke:#000000;stroke-width:40.00000381;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <rect
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         y="252.80164"
+         x="1773.7972"
+         height="60"
+         width="30"
+         id="rect4458"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         y="252.80164"
+         x="1299.4222"
+         height="60"
+         width="30"
+         id="rect4482"
+         style="fill:#000000;fill-opacity:1;stroke:none" />
+      <rect
+         inkscape:export-ydpi="53.529999"
+         inkscape:export-xdpi="53.529999"
+         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
+         y="40.989136"
+         x="1536.6097"
+         height="60"
+         width="30"
+         id="rect4482-0"
+         style="fill:#000000;fill-opacity:1;stroke:none;display:inline;filter:url(#filter3871);enable-background:new" />
+    </g>
+  </g>
+</svg>

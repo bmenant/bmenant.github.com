@@ -1,1 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="30 30 190 190" preserveAspectRatio="xMinYMid meet"><circle cx="68" cy="189" r="24"/><path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z"/><path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="30 30 195 195"
+   preserveAspectRatio="xMinYMid meet"
+   id="svg3118"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   width="100%"
+   height="100%"
+   sodipodi:docname="rss.svg"
+   inkscape:export-filename="/mnt/serveur/home/sites/perso/blog-github/assets/rss_20x20.png"
+   inkscape:export-xdpi="9.2307692"
+   inkscape:export-ydpi="9.2307692">
+  <metadata
+     id="metadata3130">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3128" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="902"
+     inkscape:window-height="666"
+     id="namedview3126"
+     showgrid="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:zoom="0.9983453"
+     inkscape:cx="91"
+     inkscape:cy="125.95589"
+     inkscape:window-x="152"
+     inkscape:window-y="290"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg3118" />
+  <circle
+     cx="68"
+     cy="189"
+     r="24"
+     id="circle3120"
+     sodipodi:cx="68"
+     sodipodi:cy="189"
+     sodipodi:rx="24"
+     sodipodi:ry="24"
+     transform="translate(-4,2)" />
+  <path
+     d="M 156,215 H 122 A 82,82 0 0 0 40,133 V 99 a 116,116 0 0 1 116,116 z"
+     id="path3122"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 180,215 A 140,140 0 0 0 40,75 V 40 a 175,175 0 0 1 175,175 z"
+     id="path3124"
+     inkscape:connector-curvature="0" />
+</svg>

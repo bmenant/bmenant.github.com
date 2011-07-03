@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="550"
+   height="550"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="sechas.svg"
+   style="enable-background:new">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5037"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5039" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4648"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4120"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4096"
+       is_visible="true" />
+    <filter
+       inkscape:collect="always"
+       id="filter3871"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         inkscape:collect="always"
+         mode="screen"
+         in2="BackgroundImage"
+         id="feBlend3873" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3857"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.9"
+         id="feGaussianBlur3859" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3857-1">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.9"
+         id="feGaussianBlur3859-5" />
+    </filter>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-8"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-3"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-2"
+       is_visible="true" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.23336394"
+     inkscape:cx="854.10808"
+     inkscape:cy="679.38366"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1123"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3005"
+       empspacing="5"
+       visible="true"
+       enabled="false"
+       snapvisiblegridlinesonly="true"
+       dotted="true" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid5158"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="600px"
+       spacingy="600px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Chat"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-502.36218)"
+     style="display:inline">
+    <g
+       id="g5148"
+       transform="translate(-1933.6097,-25.900807)">
+      <path
+         inkscape:export-ydpi="55.099998"
+         inkscape:export-xdpi="55.099998"
+         inkscape:export-filename="/home/bmenant/Sites/blog/chat_300.png"
+         sodipodi:nodetypes="ccccccc"
+         inkscape:connector-curvature="0"
+         id="path3826"
+         d="m 1978.6097,569.16382 180,140 c 34.1748,-7.57371 60.776,-9.25675 100,0 l 180,-140 -48.317,410.44842 c -100.6449,76.57856 -255.1474,77.42006 -360,0 z"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:none" />
+      <path
+         inkscape:export-ydpi="55.099998"
+         inkscape:export-xdpi="55.099998"
+         inkscape:export-filename="/home/bmenant/Sites/blog/chat_300.png"
+         sodipodi:nodetypes="ccccccc"
+         inkscape:connector-curvature="0"
+         id="path4433"
+         d="m 2158.6097,915.16576 100,0 0,0 -50,0 c 0,25.9987 0,51.9974 0,77.9961 l 0,-77.9961 z"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <g
+         inkscape:export-ydpi="55.099998"
+         inkscape:export-xdpi="55.099998"
+         inkscape:export-filename="/home/bmenant/Sites/blog/chat_300.png"
+         transform="translate(1951.6656,-3.8643798)"
+         id="g4787">
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 166.94414,759.10087 c -22.21388,0 -41.59633,12.05873 -51.96875,30 l 103.9375,0 c -10.37242,-17.94127 -29.75487,-30 -51.96875,-30 z m -60,60 c 0,33.13708 26.86291,60 60,60 33.13709,0 60,-26.86292 60,-60 l -120,0 z"
+           id="path4566-3"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:29.24987984;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4566-8-0"
+           sodipodi:cx="-345"
+           sodipodi:cy="595"
+           sodipodi:rx="35"
+           sodipodi:ry="55"
+           d="m -310,595 c 0,30.37566 -15.67003,55 -35,55 -19.32997,0 -35,-24.62434 -35,-55 0,-30.37566 15.67003,-55 35,-55 19.32997,0 35,24.62434 35,55 z"
+           transform="matrix(0,1.2857143,0.81818184,0,-319.87405,1262.6723)" />
+      </g>
+      <g
+         inkscape:export-ydpi="55.099998"
+         inkscape:export-xdpi="55.099998"
+         inkscape:export-filename="/home/bmenant/Sites/blog/chat_300.png"
+         transform="translate(1982.4871,7.2569104)"
+         id="g4791">
+        <path
+           style="fill:#000000;fill-opacity:1;stroke:none"
+           d="m 316.1226,747.97959 c -22.21388,0 -41.59633,12.05873 -51.96875,30 l 103.9375,0 c -10.37242,-17.94127 -29.75487,-30 -51.96875,-30 z m -60,60 c 0,33.13708 26.86291,60 60,60 33.13709,0 60,-26.86292 60,-60 l -120,0 z"
+           id="path4566-3-3"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:29.24987984;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           id="path4566-8-0-9"
+           sodipodi:cx="-345"
+           sodipodi:cy="595"
+           sodipodi:rx="35"
+           sodipodi:ry="55"
+           d="m -310,595 c 0,30.37566 -15.67003,55 -35,55 -19.32997,0 -35,-24.62434 -35,-55 0,-30.37566 15.67003,-55 35,-55 19.32997,0 35,24.62434 35,55 z"
+           transform="matrix(0,1.2857143,0.81818184,0,-170.69559,1251.551)" />
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Taupe"
+     style="display:inline"
+     transform="translate(0,50)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Cosmonaute"
+     transform="translate(0,50)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Robot"
+     style="display:inline;filter:url(#filter3871)"
+     transform="translate(0,50)" />
+</svg>

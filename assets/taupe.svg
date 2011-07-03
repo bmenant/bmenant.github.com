@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="550"
+   height="550"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="sechas.svg"
+   style="enable-background:new">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient5037"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop5039" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4648"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4120"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4096"
+       is_visible="true" />
+    <filter
+       inkscape:collect="always"
+       id="filter3871"
+       color-interpolation-filters="sRGB">
+      <feBlend
+         inkscape:collect="always"
+         mode="screen"
+         in2="BackgroundImage"
+         id="feBlend3873" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3857"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.9"
+         id="feGaussianBlur3859" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter3857-1">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.9"
+         id="feGaussianBlur3859-5" />
+    </filter>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-8"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-3"
+       is_visible="true" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect4124-2"
+       is_visible="true" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.23336394"
+     inkscape:cx="854.10808"
+     inkscape:cy="679.38366"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="true"
+     showborder="true"
+     borderlayer="false"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="1123"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3005"
+       empspacing="5"
+       visible="true"
+       enabled="false"
+       snapvisiblegridlinesonly="true"
+       dotted="true" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid5158"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="600px"
+       spacingy="600px" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Chat"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-502.36218)"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Taupe"
+     style="display:inline"
+     transform="translate(0,50)">
+    <g
+       id="g5113"
+       transform="translate(-615.95807,-21.620925)">
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         sodipodi:nodetypes="csscccccssccc"
+         inkscape:connector-curvature="0"
+         id="path4646"
+         d="m 858.6097,406.80164 c 0,0 -170,-180 -120,-280 8.75,-17.5 19.5137,-32.431024 30.5469,-45.937504 l 54.5781,-66.8125 36.4375,29.8125 36.4375,-29.8125 36.4375,29.8125 36.4375,-29.8125 48.5781,66.8125 c 10.256,14.10572 21.7969,28.437504 30.5469,45.937504 50,100 -130,280 -130,280 l -30,-14 z"
+         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(1.2863554,0,0,1.2863554,3975.384,715.70644)"
+         d="m -2400,-430 c 0,49.70563 -40.2944,90 -90,90 -49.7056,0 -90,-40.29437 -90,-90 0,-49.70563 40.2944,-90 90,-90 49.7056,0 90,40.29437 90,90 z"
+         sodipodi:ry="90"
+         sodipodi:rx="90"
+         sodipodi:cy="-430"
+         sodipodi:cx="-2490"
+         id="path4680"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(0.64748201,0,0,0.64748201,2350.2727,23.366016)"
+         d="m -2298,215 c 0,76.76758 -62.2324,139 -139,139 -76.7676,0 -139,-62.23242 -139,-139 0,-76.76758 62.2324,-139 139,-139 76.7676,0 139,62.23242 139,139 z"
+         sodipodi:ry="139"
+         sodipodi:rx="139"
+         sodipodi:cy="215"
+         sodipodi:cx="-2437"
+         id="path4582"
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:46.33333206;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(1.4285714,0,0,1.4285714,3718.0733,22.574646)"
+         d="m -2020,98 c 0,23.19596 -18.804,42 -42,42 -23.196,0 -42,-18.80404 -42,-42 0,-23.195959 18.804,-42 42,-42 23.196,0 42,18.804041 42,42 z"
+         sodipodi:ry="42"
+         sodipodi:rx="42"
+         sodipodi:cy="98"
+         sodipodi:cx="-2062"
+         id="path4588"
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(1.2863554,0,0,1.2863554,4206.928,715.70645)"
+         d="m -2400,-430 c 0,49.70563 -40.2944,90 -90,90 -49.7056,0 -90,-40.29437 -90,-90 0,-49.70563 40.2944,-90 90,-90 49.7056,0 90,40.29437 90,90 z"
+         sodipodi:ry="90"
+         sodipodi:rx="90"
+         sodipodi:cy="-430"
+         sodipodi:cx="-2490"
+         id="path4680-5"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;display:inline;enable-background:new"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(0.64748201,0,0,0.64748201,2581.8167,23.366016)"
+         d="m -2298,215 c 0,76.76758 -62.2324,139 -139,139 -76.7676,0 -139,-62.23242 -139,-139 0,-76.76758 62.2324,-139 139,-139 76.7676,0 139,62.23242 139,139 z"
+         sodipodi:ry="139"
+         sodipodi:rx="139"
+         sodipodi:cy="215"
+         sodipodi:cx="-2437"
+         id="path4582-2"
+         style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:46.33333206;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(1.4285714,0,0,1.4285714,3949.6173,22.574646)"
+         d="m -2020,98 c 0,23.19596 -18.804,42 -42,42 -23.196,0 -42,-18.80404 -42,-42 0,-23.195959 18.804,-42 42,-42 23.196,0 42,18.804041 42,42 z"
+         sodipodi:ry="42"
+         sodipodi:rx="42"
+         sodipodi:cy="98"
+         sodipodi:cx="-2062"
+         id="path4588-2"
+         style="fill:#000000;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="translate(3324.6841,304.57465)"
+         sodipodi:open="true"
+         sodipodi:end="5.2021435"
+         sodipodi:start="4.2342374"
+         d="m -2477.0321,-188.24269 c 25.4193,-13.17389 55.693,-12.99826 80.9577,0.46968"
+         sodipodi:ry="87"
+         sodipodi:rx="87"
+         sodipodi:cy="-111"
+         sodipodi:cx="-2437"
+         id="path4636"
+         style="fill:#ff2a2a;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(1.0714286,0,0,1.0714286,3690.3955,828.23021)"
+         d="m -2580,-475 c 0,19.32997 -15.67,35 -35,35 -19.33,0 -35,-15.67003 -35,-35 0,-19.32997 15.67,-35 35,-35 19.33,0 35,15.67003 35,35 z"
+         sodipodi:ry="35"
+         sodipodi:rx="35"
+         sodipodi:cy="-475"
+         sodipodi:cx="-2615"
+         id="path4678"
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         sodipodi:type="arc" />
+      <g
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="translate(3092.6998,295.03386)"
+         id="g4765">
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:36.81748581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+           id="path4291-3-6"
+           sodipodi:cx="-1938.126"
+           sodipodi:cy="166.28294"
+           sodipodi:rx="29.948967"
+           sodipodi:ry="86.638084"
+           d="m -1908.3099,174.43444 c -1.5562,47.63664 -16.1669,82.60421 -32.6339,78.10226 -13.5294,-3.69885 -24.5021,-33.28666 -26.727,-72.06938"
+           sodipodi:start="0.094226136"
+           sodipodi:end="2.9771324"
+           sodipodi:open="true"
+           transform="matrix(0.79305902,-0.29236348,0.20672236,0.76099034,-591.20223,-575.53068)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:36.81748581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+           id="path4291-3-2-6"
+           sodipodi:cx="-1938.126"
+           sodipodi:cy="166.28294"
+           sodipodi:rx="29.948967"
+           sodipodi:ry="86.638084"
+           d="m -1908.3099,174.43444 c -1.5562,47.63664 -16.1669,82.60421 -32.6339,78.10226 -13.5294,-3.69885 -24.5021,-33.28666 -26.727,-72.06938"
+           sodipodi:start="0.094226136"
+           sodipodi:end="2.9771324"
+           sodipodi:open="true"
+           transform="matrix(0.55003431,-0.64177977,0.55136842,0.56376705,-1086.4083,-1254.873)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:36.81748581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+           id="path4291-3-20-2"
+           sodipodi:cx="-1938.126"
+           sodipodi:cy="166.28294"
+           sodipodi:rx="29.948967"
+           sodipodi:ry="86.638084"
+           d="m -1908.3099,174.43444 c -1.5562,47.63664 -16.1669,82.60421 -32.6339,78.10226 -13.5294,-3.69885 -24.5021,-33.28666 -26.727,-72.06938"
+           sodipodi:start="0.094226136"
+           sodipodi:end="2.9771324"
+           sodipodi:open="true"
+           transform="matrix(0.27744911,-0.79839901,0.71926005,0.32327296,-1619.8101,-1562.9971)" />
+      </g>
+      <g
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="translate(3119.2163,286.19504)"
+         id="g4770">
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:36.81748581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+           id="path4291-3-5-1"
+           sodipodi:cx="-1938.126"
+           sodipodi:cy="166.28294"
+           sodipodi:rx="29.948967"
+           sodipodi:ry="86.638084"
+           d="m -1908.3099,174.43444 c -1.5562,47.63664 -16.1669,82.60421 -32.6339,78.10226 -13.5294,-3.69885 -24.5021,-33.28666 -26.727,-72.06938"
+           sodipodi:start="0.094226136"
+           sodipodi:end="2.9771324"
+           sodipodi:open="true"
+           transform="matrix(-0.79785603,-0.27900672,-0.19391611,0.76435396,-3850.2489,-547.58229)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:36.81748581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+           id="path4291-3-2-3-4"
+           sodipodi:cx="-1938.126"
+           sodipodi:cy="166.28294"
+           sodipodi:rx="29.948967"
+           sodipodi:ry="86.638084"
+           d="m -1908.3099,174.43444 c -1.5562,47.63664 -16.1669,82.60421 -32.6339,78.10226 -13.5294,-3.69885 -24.5021,-33.28666 -26.727,-72.06938"
+           sodipodi:start="0.094226136"
+           sodipodi:end="2.9771324"
+           sodipodi:open="true"
+           transform="matrix(-0.5635812,-0.62991684,-0.53923347,0.57538481,-3372.4202,-1228.212)" />
+        <path
+           sodipodi:type="arc"
+           style="fill:none;stroke:#000000;stroke-width:36.81748581;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;enable-background:new"
+           id="path4291-3-20-4-7"
+           sodipodi:cx="-1938.126"
+           sodipodi:cy="166.28294"
+           sodipodi:rx="29.948967"
+           sodipodi:ry="86.638084"
+           d="m -1908.3099,174.43444 c -1.5562,47.63664 -16.1669,82.60421 -32.6339,78.10226 -13.5294,-3.69885 -24.5021,-33.28666 -26.727,-72.06938"
+           sodipodi:start="0.094226136"
+           sodipodi:end="2.9771324"
+           sodipodi:open="true"
+           transform="matrix(-0.29439431,-0.79230738,-0.7122102,0.33852188,-2844.7393,-1543.3106)" />
+      </g>
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(0.71624331,0,0,0.71624331,2455.9145,-344.98278)"
+         d="m -1973.5911,673.52441 c 0,11.56628 -9.3763,20.94261 -20.9426,20.94261 -11.5663,0 -20.9426,-9.37633 -20.9426,-20.94261 0,-11.56628 9.3763,-20.9426 20.9426,-20.9426 11.5663,0 20.9426,9.37632 20.9426,20.9426 z"
+         sodipodi:ry="20.942604"
+         sodipodi:rx="20.942604"
+         sodipodi:cy="673.52441"
+         sodipodi:cx="-1994.5337"
+         id="path3888-2"
+         style="fill:#ffffff;fill-opacity:1;stroke:none"
+         sodipodi:type="arc" />
+      <path
+         inkscape:export-ydpi="56.09"
+         inkscape:export-xdpi="56.09"
+         inkscape:export-filename="/home/bmenant/Sites/blog/taupe_300.png"
+         transform="matrix(0.71624331,0,0,0.71624331,2223.1742,-344.98278)"
+         d="m -1973.5911,673.52441 c 0,11.56628 -9.3763,20.94261 -20.9426,20.94261 -11.5663,0 -20.9426,-9.37633 -20.9426,-20.94261 0,-11.56628 9.3763,-20.9426 20.9426,-20.9426 11.5663,0 20.9426,9.37632 20.9426,20.9426 z"
+         sodipodi:ry="20.942604"
+         sodipodi:rx="20.942604"
+         sodipodi:cy="673.52441"
+         sodipodi:cx="-1994.5337"
+         id="path3888-2-5"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;display:inline;enable-background:new"
+         sodipodi:type="arc" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Cosmonaute"
+     transform="translate(0,50)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Robot"
+     style="display:inline;filter:url(#filter3871)"
+     transform="translate(0,50)" />
+</svg>
