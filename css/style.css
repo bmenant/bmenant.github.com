@@ -108,6 +108,83 @@ body {
 
 }
 
+/**
+ * Header =header
+ */
+  header h1 {
+    /*
+    margin-bottom : 0.208em;
+    padding-bottom: 0.625em;*/
+    font          : normal 3em/1.25 Neucha, cursive, sans-serif;
+    /*background    : url('/assets/filet_20x20.png') 0 100% repeat-x;*/
+  }/*
+  .borderimage header h1 {
+    margin-bottom       : 0.208em;
+    padding-bottom      : 0;
+    border              : dotted 20px #000;
+    border-width        : 0 0 20px;
+    -moz-border-image   : url('/assets/filet_20x20.png') 0 0 20 round;
+    -webkit-border-image: url('/assets/filet_20x20.png') 0 0 20 round;
+    -o-border-image     : url('/assets/filet_20x20.png') 0 0 20 round;
+    border-image        : url('/assets/filet_20x20.png') 0 0 20 round;
+    background          : none;
+  }*/
+    h1 a:link,
+    h1 a:visited {
+      -moz-transition   : color .2s;
+      -webkit-transition: color .2s;
+      -o-transition     : color .2s;
+      -ms-transition    : color .2s;
+      transition        : color .2s;
+      text-decoration   : none;
+      color             : #444;
+    }
+    h1 a:hover,
+    h1 a:focus,
+    h1 a:active {
+      text-shadow : 0 0 1px;
+      outline     : none;
+      color       : #000;
+    }
+  .rss a {
+    background-position: 0 -40px;
+  }
+
+/**
+ * Footer =footer
+ */
+#footer {
+  clear     : right;
+  margin-top: 1.231em;
+}
+  #footer dl > * {
+    display: inline;
+  }/*
+  #footer dt:before {
+    display: block;
+    content: ' ';
+  }*/
+    a.github {
+      background-position: 0 -20px;
+    }
+    a.creative-commons {
+      background-position:  0 0;
+    }
+
+/**
+ * Common styles for Header and Footer
+ * =header =footer
+ */
+a.has-icon {
+  padding-left      : 22px;
+  background-image  : url('/assets/sprite_20x20.png');
+  background-repeat : no-repeat;
+}
+#footer,
+#header {
+  float: right;
+  width: 38.2%;
+}
 
 /**
  * Content
@@ -133,13 +210,45 @@ section#contenu li {
   list-style-image: none;
 }
 section#contenu li {
-  font  : italic 1em/1.25 Benj_CartoGothicStdItalic, sans-serif;
+  margin-bottom : 0.625em;
+  padding-bottom: 1.875em;
+  font          : 1em/1.25 Benj_CartoGothicStdBook, sans-serif;
+  background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
+}
+.borderimage section#contenu li {
+  padding-bottom      : 0.625em;
+  border              : dotted 20px #000;
+  border-width        : 0 0 20px;
+  -moz-border-image   : url('/assets/filet_20x20.png') 0 0 20 round;
+  -webkit-border-image: url('/assets/filet_20x20.png') 0 0 20 round;
+  -o-border-image     : url('/assets/filet_20x20.png') 0 0 20 round;
+  border-image        : url('/assets/filet_20x20.png') 0 0 20 round;
+  background          : none;
 }
   section#contenu a {
-    display         : block;
-    font            : normal 2em/1.25 Neucha, cursive, sans-serif;
-    text-decoration : none;
+    display           : block;
+    -moz-transition   : color .2s;
+    -webkit-transition: color .2s;
+    -o-transition     : color .2s;
+    -ms-transition    : color .2s;
+    transition        : color .2s;
+    font              : normal 2em/1.25 Neucha, cursive, sans-serif;
+    text-decoration   : none;
+    color             : #444;
   }
+    section#contenu a:visited {
+      color: #777;
+    }
+    section#contenu a:hover,
+    section#contenu a:focus,
+    section#contenu a:active {
+      text-shadow : 0 0 1px;
+      outline     : none;
+      color       : #000;
+    }
+    section#contenu a:focus {
+      text-decoration: underline;
+    }
   section#contenu li div,
   section#contenu li time {
     -moz-transition   : color .5s;
@@ -155,14 +264,14 @@ section#contenu li {
   section#contenu li time {
     color: #CCC; color: rgba(0, 0, 0, .2);
   }
-  section#contenu a:focus ~ div,
-  section#contenu a:focus ~ div time,
-  section#contenu a:active ~ div,
-  section#contenu a:active ~ div time,
-  section#contenu li:hover div,
-  section#contenu li:hover time {
-    color: #000; color: rgba(0, 0, 0, 1);
-  }
+    section#contenu a:focus ~ div,
+    section#contenu a:focus ~ div time,
+    section#contenu a:active ~ div,
+    section#contenu a:active ~ div time,
+    section#contenu li:hover div,
+    section#contenu li:hover time {
+      color: #444;
+    }
   /* Character's images replacement */
   section#contenu .iir {
     width           : 20px;
@@ -187,7 +296,35 @@ section#contenu li {
  * Post's content
  * =post =content
  */
+article h1 {
+  min-height: 1.25em;
+  font: normal 3em/1.0417 Neucha, cursive, sans-serif;
+}
+article header p {
 
+}
+  /* Character's images replacement */
+  article header .iir {
+    width       : 20px;
+    height      : 20px;
+    margin-right: 5px;
+  }
+  article header .le-chat,
+  article header .chat {
+    background: url('/assets/chat.svg');
+  }
+  article header .le-robot,
+  article header .robot {
+    background: url('/assets/robot.svg');
+  }
+  article header .le-cosmonaute,
+  article header .cosmonaute {
+    background: url('/assets/cosmonaute.svg');
+  }
+  article header .la-taupe,
+  article header .taupe {
+    background: url('/assets/taupe.svg');
+}
 
   /* Comments =comments */
   .showme {
@@ -195,54 +332,6 @@ section#contenu li {
     visibility: visible;
     /* @todo Add transition, here */
   }
-
-
-/**
- * Header =header
- */
-  header h1 {
-    font: normal 3em/1.25 Neucha, cursive, sans-serif;
-  }
-  .rss a {
-    background-position: 0 -40px;
-  }
-
-/**
- * Footer =footer
- */
-#footer {
-  clear     : right;
-  margin-top: 1.231em;
-}
-  #footer dl > * {
-    display: inline;
-  }
-  #footer dt:before {
-    display: block;
-    content: ' ';
-  }
-    a.github {
-      background-position: 0 -20px;
-    }
-    a.creative-commons {
-      background-position:  0 0;
-    }
-
-/**
- * Common styles for Header and Footer
- * =header =footer
- */
-a.has-icon {
-  padding-left      : 22px;
-  background-image  : url('/assets/sprite_20x20.png');
-  background-repeat : no-repeat;
-}
-#footer,
-#header {
-  float: right;
-  width: 38.2%;
-}
-
 
 
 

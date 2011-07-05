@@ -28,10 +28,21 @@
 <body class="clearfix">
 
   <article id="contenu"><div>
-    <h1>{{ page.title }}</h1>
-    <div class="visuallyhidden">
-      <a href="#navigation">Passer l’article pour aller au menu de navigation</a>
-    </div>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <div class="visuallyhidden">
+        <a href="#navigation">Passer l’article pour aller au menu de navigation</a>
+      </div>
+
+      <p>
+        <span class="visuallyhidden">Avec</span>
+        {% for character in page.characters %}
+        <span class="iir {{ character | downcase | replace: ' ', '-' }}">
+          {{ character }}{% if forloop.rindex0 == 1 %} et {% elsif forloop.last %}.{% else %}, {% endif %}
+        </span>
+        {% endfor %}
+      </p>
+    </header>
 
     {{ content }}
 
