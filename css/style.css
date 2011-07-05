@@ -182,8 +182,17 @@ a.has-icon {
 }
 #footer,
 #header {
-  float: right;
-  width: 38.2%;
+  float     : right;
+  width     : 38.2%;
+  text-align: right;
+}
+.description {
+  font  : italic 0.813em/1.538 Benj_CartoGothicStdItalic, sans-serif;
+  margin: 0 0 1.538em 15% ;
+}
+#footer > *,
+#header > * {
+  margin-right: 1.25rem;
 }
 
 /**
@@ -301,30 +310,60 @@ article h1 {
   font: normal 3em/1.0417 Neucha, cursive, sans-serif;
 }
 article header p {
-
+  margin-bottom : 0.625em;
+  padding       : 1.875em 0;
+  background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
+}
+.borderimage article header p {
+  padding             : 0.625em 0;
+  border              : dotted 20px #000;
+  border-width        : 20px 0;
+  -moz-border-image   : url('/assets/filet_20x20.png') 20 0 round;
+  -webkit-border-image: url('/assets/filet_20x20.png') 20 0 round;
+  -o-border-image     : url('/assets/filet_20x20.png') 20 0 round;
+  border-image        : url('/assets/filet_20x20.png') 20 0 round;
+  background          : none;
 }
   /* Character's images replacement */
   article header .iir {
-    width       : 20px;
-    height      : 20px;
-    margin-right: 5px;
+    min-width         : 120px;
+    width             : 30%;
+    height            : 120px;
+    margin            : 0.313em;
+    -moz-transition   : all 6s;
+    -webkit-transition: all 6s;
+    -o-transition     : all 6s;
+    -ms-transition    : all 6s;
+    transition        : all 6s;
   }
   article header .le-chat,
   article header .chat {
-    background: url('/assets/chat.svg');
+    background: url('/assets/chat_120x120.png') no-repeat 50% 50%;
   }
   article header .le-robot,
   article header .robot {
-    background: url('/assets/robot.svg');
+    background: url('/assets/robot_120x120.png') no-repeat 50% 50%;
   }
   article header .le-cosmonaute,
   article header .cosmonaute {
-    background: url('/assets/cosmonaute.svg');
+    background: url('/assets/cosmonaute_120x120.png') no-repeat 50% 50%;
   }
   article header .la-taupe,
   article header .taupe {
-    background: url('/assets/taupe.svg');
-}
+    background: url('/assets/taupe_120x120.png') no-repeat 50% 50%;
+  }
+  article header .iir:hover {
+    -moz-transform          : rotate(10080deg);
+    -moz-transform-origin   : 45% 52%;
+    -webkit-transform       : rotate(10080deg);
+    -webkit-transform-origin: 45% 52%;
+    -o-transform            : rotate(10080deg);
+    -o-transform-origin     : 45% 52%;
+    -ms-transform           : rotate(10080deg);
+    -ms-transform-origin    : 45% 52%;
+    transform               : rotate(10080deg);
+    transform-origin        : 45% 52%;
+  }
 
   /* Comments =comments */
   .showme {
