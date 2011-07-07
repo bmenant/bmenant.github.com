@@ -1,5 +1,6 @@
-  <footer id="footer">
-    <dl>
+  <footer id="footer" aria-live="off">
+    <h2 class="visuallyhidden">À propos</h2>
+    <dl id="a-propos">
       <dt>Hébergement du Benj’ blog sur</dt>
         <dd><a href="https://github.com/bmenant/bmenant.github.com" class="has-icon github">GitHub Pages</a>.</dd>
       <dt>Contenus du blog <span title="Sauf mention contraire explicite">mis à disposition</span> selon les termes de la Licence</dt>
@@ -14,6 +15,10 @@
         <dd>réalisées avec <a href="http://piwik.org/">Piwik</a>&nbsp;;</dd>
         <dd>vous pouvez <a href="http://stats.menant-benjamin.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=fr">refuser ces collectes</a>.</dd>
     </dl>
+    <div><a href="#contenu"
+            onclick='document.getElementById("footer").className="";document.getElementById("item-a-propos").className="";'>
+      Retourner au contenu
+    </a></div>
   </footer>
 
   <!-- Piwik Tracking Code -->

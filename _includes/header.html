@@ -21,13 +21,17 @@
         <li class="contenu">
           <a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
         {% endif %}
+        <!-- Flux de syndication -->
+        <li class="rss">
+          <a href="/index.xml" class="has-icon">Abonnement RSS</a></li>
         <!-- Lien vers le portail -->
         <li class="perso">
           <a  href="http://menant-benjamin.fr/"
               title="Quelques informations à propos de l’auteur">Benj’</a></li>
-        <!-- Flux de syndication -->
-        <li class="rss">
-          <a href="/index.xml" class="has-icon">Abonnement RSS</a></li>
+        <li id="item-a-propos">
+          <a href="#a-propos" title="Mentions légales et crédits du Benj’ blog"
+             onclick='document.getElementById("footer").className="active";document.getElementById("item-a-propos").className="active";'>
+            À propos</a></li>
       </ul>
     </nav>
   </header>
