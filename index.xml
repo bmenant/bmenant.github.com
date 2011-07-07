@@ -11,7 +11,7 @@ layout: nil
   <id>http://blog.menant-benjamin.fr/</id>
   <author>
     <name>Benjamin MENANT</name>
-    <email>trop-de-spam@this-is-not-a-real.mail</email>
+    <email>trop-de-spam@this-is-not-a-real-mail.sorry</email>
   </author>
 
   {% for post in site.posts %}
