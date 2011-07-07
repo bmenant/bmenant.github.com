@@ -73,9 +73,11 @@ button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
 
 body, select, input, textarea {  color: #444; }
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; color: #222; }
+a { color: #444; }
+a:visited { color: #777; }
+a:hover, a:focus, a:active { color: #000; }
+a:focus, a:active { text-decoration: underline; }
 
 /**
  * Benj’ blog, main styles
@@ -93,44 +95,17 @@ body {
 /**
  * Header =header
  */
-  header h1 {
-    /*
-    margin-bottom : 0.208em;
-    padding-bottom: 0.625em;*/
-    font          : normal 3em/1.25 BenjDesignosaur, cursive, sans-serif;
-    /*background    : url('/assets/filet_20x20.png') 0 100% repeat-x;*/
-  }/*
-  .borderimage header h1 {
-    margin-bottom       : 0.208em;
-    padding-bottom      : 0;
-    border              : dotted 20px #000;
-    border-width        : 0 0 20px;
-    -moz-border-image   : url('/assets/filet_20x20.png') 0 0 20 round;
-    -webkit-border-image: url('/assets/filet_20x20.png') 0 0 20 round;
-    -o-border-image     : url('/assets/filet_20x20.png') 0 0 20 round;
-    border-image        : url('/assets/filet_20x20.png') 0 0 20 round;
-    background          : none;
-  }*/
-    h1 a:link,
-    h1 a:visited {
-      -moz-transition   : color .2s;
-      -webkit-transition: color .2s;
-      -o-transition     : color .2s;
-      -ms-transition    : color .2s;
-      transition        : color .2s;
-      text-decoration   : none;
-      color             : #444;
-    }
-    h1 a:hover,
-    h1 a:focus,
-    h1 a:active {
-      text-shadow : 0 0 1px;
-      outline     : none;
-      color       : #000;
-    }
-  .rss a {
-    background-position: 0 -40px;
-  }
+#header li a {
+  display: inline-block;
+}
+#header li.active a {
+  text-decoration: line-through;
+}
+.rss a {
+  /*background-position: 0 -40px;*/
+  background  : none !important;
+  padding-left: 0 !important;
+}
 
 /**
  * Footer =footer
@@ -201,61 +176,25 @@ section#contenu li {
   list-style      : none;
   list-style-image: none;
 }
-section#contenu li {
-  margin-bottom : 0.625em;
-  padding-bottom: 1.875em;
-  font          : 1em/1.25 BenjCabin, sans-serif;
-  background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
-}
-.borderimage section#contenu li {
-  padding-bottom      : 0.625em;
-  border              : dotted 20px #000;
-  border-width        : 0 0 20px;
-  -moz-border-image   : url('/assets/filet_20x20.png') 0 0 20 round;
-  -webkit-border-image: url('/assets/filet_20x20.png') 0 0 20 round;
-  -o-border-image     : url('/assets/filet_20x20.png') 0 0 20 round;
-  border-image        : url('/assets/filet_20x20.png') 0 0 20 round;
-  background          : none;
-}
-  section#contenu a {
-    display           : block;
-    -moz-transition   : color .2s;
-    -webkit-transition: color .2s;
-    -o-transition     : color .2s;
-    -ms-transition    : color .2s;
-    transition        : color .2s;
-    font              : normal 2em/1.25 BenjDesignosaur, cursive, sans-serif;
-    text-decoration   : none;
-    color             : #444;
-  }
-    section#contenu a:visited {
-      color: #777;
-    }
-    section#contenu a:hover,
-    section#contenu a:focus,
-    section#contenu a:active {
-      text-shadow : 0 0 1px;
-      outline     : none;
-      color       : #000;
-    }
-    section#contenu a:focus {
-      text-decoration: underline;
-    }
   section#contenu li div,
   section#contenu li time {
-    -moz-transition   : color .5s;
-    -webkit-transition: color .5s;
-    -o-transition     : color .5s;
-    -ms-transition    : color .5s;
-    transition        : color .5s;
+    -moz-transition   : color 0.5s;
+    -webkit-transition: color 0.5s;
+    -o-transition     : color 0.5s;
+    -ms-transition    : color 0.5s;
+    transition        : color 0.5s;
   }
   section#contenu li div {
     float   : right;
     color   : transparent;
   }
   section#contenu li time {
-    color: #CCC; color: rgba(0, 0, 0, .2);
+    color: #CCC; color: rgba(0, 0, 0, 0.2);
   }
+    section#contenu li a {
+      font    : normal 2em/1.25 BenjDesignosaur, cursive, sans-serif;
+      display : block;
+    }
     section#contenu a:focus ~ div,
     section#contenu a:focus ~ div time,
     section#contenu a:active ~ div,
@@ -313,11 +252,11 @@ article header p {
     width             : 30%;
     height            : 120px;
     margin            : 0.313em;
-    -moz-transition   : all 6s;
-    -webkit-transition: all 6s;
-    -o-transition     : all 6s;
-    -ms-transition    : all 6s;
-    transition        : all 6s;
+    -moz-transition   : all 6s ease-in-out;
+    -webkit-transition: all 6s ease-in-out;
+    -o-transition     : all 6s ease-in-out;
+    -ms-transition    : all 6s ease-in-out;
+    transition        : all 6s ease-in-out;
   }
   article header .le-chat,
   article header .chat {
@@ -355,7 +294,59 @@ article header p {
     /* @todo Add transition, here */
   }
 
+/**
+ * Common styles for Header and Content
+ * =header =content
+ */
+header h1 {
+  font: normal 3em/1.25 BenjDesignosaur, cursive, sans-serif;
+}
+#header a:link,
+#header a:visited,
+section#contenu a:link {
+  -moz-transition   : all 0.2s;
+  -webkit-transition: all 0.2s;
+  -o-transition     : all 0.2s;
+  -ms-transition    : all 0.2s;
+  transition        : all 0.2s;
+  text-decoration   : none;
+  color             : #222;
+}
+  #header a:hover,
+  #header a:focus,
+  #header a:active,
+  section#contenu a:hover,
+  section#contenu a:focus,
+  section#contenu a:active {
+    text-shadow : 0 0 1px, 0 0 1px, 0 0 1px;
+    outline     : none;
+  }
+  #header a:focus,
+  section#contenu a:focus {
+    text-decoration: underline;
+  }
 
+#header li a,
+section#contenu li {
+  margin-bottom : 10px;
+  padding-bottom: 30px;
+  background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
+}
+.borderimage #header li a,
+.borderimage section#contenu li {
+  padding-bottom      : 10px;
+  border              : dotted 20px #000;
+  border-width        : 0 0 20px;
+  -moz-border-image   : url('/assets/filet_20x20.png') 0 0 20 round;
+  -webkit-border-image: url('/assets/filet_20x20.png') 0 0 20 round;
+  -o-border-image     : url('/assets/filet_20x20.png') 0 0 20 round;
+  border-image        : url('/assets/filet_20x20.png') 0 0 20 round;
+  background          : none;
+}
+  #header li a,
+  section#contenu li a {
+    font: normal 2em/1.25 BenjDesignosaur, cursive, sans-serif;
+  }
 
 
 
