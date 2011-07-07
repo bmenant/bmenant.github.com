@@ -83,23 +83,41 @@ a:focus, a:active { text-decoration: underline; }
  * Benj’ blog, main styles
  *
  * @author Benjamin MENANT
- * @todo Do the work!
-*/
+ *
+ * Summary
+ * *******
+ * 1..........Header
+ * 2..........Footer
+ * 3..........Content
+ *  3.1.......Index (post's list, home page)
+ *  3.2.......Post (post page)
+ *    3.2.1...Comments
+ * 4..........Common (common styles)
+ *
+ */
 
 body {
   max-width : 960px;
+  min-width : 700px;
   margin    : 1.25em auto;
-
 }
 
 /**
- * Header =header
+ * Header
+ * =header
  */
+.description {
+  font  : italic 0.813em/1.538 BenjCabin, sans-serif;
+  margin: 0 0 1.538em 15%;
+}
 #header li a {
   display: inline-block;
 }
 #header li.active a {
   text-decoration: line-through;
+}
+#item-a-propos.active a {
+  display: block;
 }
 .rss a {
   /*background-position: 0 -40px;*/
@@ -108,18 +126,32 @@ body {
 }
 
 /**
- * Footer =footer
+ * Footer
+ * =footer
  */
 #footer {
-  clear     : right;
-  margin-top: 1.231em;
+  clear: right;
 }
+  #footer dl {
+    margin-bottom     : 1.25em;
+    -moz-transition   : all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition     : all 0.5s;
+    -ms-transition    : all 0.5s;
+    transition        : all 0.5s;
+    text-align        : center;
+    opacity           : 0;
+  }
+  #footer.active dl {
+    opacity: 1;
+  }
   #footer dl > * {
     display: inline;
   }
-  #footer dt:before {
-    display: block;
-    content: '';
+  #footer dd + dt:before {
+    display   : block;
+    margin-top: 0.625em;
+    content   : '';
   }
     a.github {
       background-position: 0 -20px;
@@ -127,35 +159,17 @@ body {
     a.creative-commons {
       background-position:  0 0;
     }
+  #footer div {
+    opacity: 0;
+  }
+  #footer.active div {
+    opacity: 1;
+  }
 
-/**
- * Common styles for Header and Footer
- * =header =footer
- */
-a.has-icon {
-  padding-left      : 22px;
-  background-image  : url('/assets/sprite_20x20.png');
-  background-repeat : no-repeat;
-}
-#footer,
-#header {
-  float     : right;
-  width     : 38.2%;
-  text-align: right;
-}
-.description {
-  font  : italic 0.813em/1.538 BenjCabin, sans-serif;
-  margin: 0 0 1.538em 15%;
-}
-#footer > *,
-#header > * {
-  margin-right: 7%;
-  margin-right: 1.25rem;
-}
 
 /**
  * Content
- * =contenu
+ * =content
  */
 #contenu {
   float   : left;
@@ -168,7 +182,7 @@ a.has-icon {
 
 /**
  * List of posts
- * =post =content
+ * =index
  */
 section#contenu ul,
 section#contenu li {
@@ -185,16 +199,20 @@ section#contenu li {
     transition        : color 0.5s;
   }
   section#contenu li div {
-    float   : right;
-    color   : transparent;
+    float : right;
+    color : transparent;
   }
   section#contenu li time {
     color: #CCC; color: rgba(0, 0, 0, 0.2);
   }
     section#contenu li a {
-      font    : normal 2em/1.25 BenjDesignosaur, cursive, sans-serif;
+      font    : normal 2em/1.25 BenjDesignosaur, sans-serif;
       display : block;
     }
+    section#contenu a:visited {
+      text-decoration: none;
+    }
+    /* Display the date on interaction */
     section#contenu a:focus ~ div,
     section#contenu a:focus ~ div time,
     section#contenu a:active ~ div,
@@ -225,11 +243,11 @@ section#contenu li {
 
 /**
  * Post's content
- * =post =content
+ * =post
  */
 article h1 {
   min-height: 1.25em;
-  font: normal 3em/1.0417 BenjDesignosaur, cursive, sans-serif;
+  font: normal 3em/1.0417 BenjDesignosaur, sans-serif;
 }
 article header p {
   margin-bottom : 0.625em;
@@ -289,26 +307,42 @@ article header p {
 
   /* Comments =comments */
   .showme {
-    display   : block;
-    visibility: visible;
     /* @todo Add transition, here */
   }
 
 /**
- * Common styles for Header and Content
- * =header =content
+ * Common styles
+ * =common
  */
+
+a.has-icon {
+  padding-left      : 22px;
+  background-image  : url('/assets/sprite_20x20.png');
+  background-repeat : no-repeat;
+}
+#footer,
+#header {
+  float     : right;
+  width     : 38.2%;
+  text-align: right;
+}
+  #footer > *,
+  #header > * {
+    margin-right: 7%;
+    margin-right: 1.25rem;
+  }
+
 header h1 {
-  font: normal 3em/1.25 BenjDesignosaur, cursive, sans-serif;
+  font: normal 3em/1.25 BenjDesignosaur, sans-serif;
 }
 #header a:link,
 #header a:visited,
 section#contenu a:link {
-  -moz-transition   : all 0.2s;
-  -webkit-transition: all 0.2s;
-  -o-transition     : all 0.2s;
-  -ms-transition    : all 0.2s;
-  transition        : all 0.2s;
+  -moz-transition   : all 0.1s;
+  -webkit-transition: all 0.1s;
+  -o-transition     : all 0.1s;
+  -ms-transition    : all 0.1s;
+  transition        : all 0.1s;
   text-decoration   : none;
   color             : #222;
 }
@@ -318,12 +352,9 @@ section#contenu a:link {
   section#contenu a:hover,
   section#contenu a:focus,
   section#contenu a:active {
-    text-shadow : 0 0 1px, 0 0 1px, 0 0 1px;
-    outline     : none;
-  }
-  #header a:focus,
-  section#contenu a:focus {
-    text-decoration: underline;
+    text-shadow     : 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+    outline         : none;
+    text-decoration : underline;
   }
 
 #header li a,
@@ -345,7 +376,7 @@ section#contenu li {
 }
   #header li a,
   section#contenu li a {
-    font: normal 2em/1.25 BenjDesignosaur, cursive, sans-serif;
+    font: normal 2em/1.25 BenjDesignosaur, sans-serif;
   }
 
 
