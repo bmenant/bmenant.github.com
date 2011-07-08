@@ -154,10 +154,10 @@ body {
     content   : '';
   }
     a.github {
-      background-position: 0 -20px;
+      background-position: 0 -49px;
     }
     a.creative-commons {
-      background-position:  0 0;
+      background-position:  0 -29px;
     }
     #footer div:after {
       content : '';
@@ -179,9 +179,9 @@ body {
       margin              : auto;
       width               : 5em;
       height              : 2.5em;
-      background-image    : url('/assets/sprite2_20x49.png'),
-                            url('/assets/sprite2_20x49.png'),
-                            url('/assets/sprite2_20x49.png');
+      background-image    : url('/assets/sprite_20x169x20.png'),
+                            url('/assets/sprite_20x169x20.png'),
+                            url('/assets/sprite_20x169x20.png');
       background-position : 50% 0.688em,
                             0% 2.5em,
                             100% 2.5em;
@@ -253,19 +253,19 @@ section#contenu li {
     width           : 20px;
     height          : 20px;
     margin-right    : 5px;
-    background-image: url('/assets/sprite_20x20.png');
+    background-image: url('/assets/sprite_20x169x20.png');
   }
   section#contenu .le-chat {
-    background-position: 0 -60px;
+    background-position: 0 -89px;
   }
   section#contenu .le-robot {
-    background-position: 0 -100px;
+    background-position: 0 -129px;
   }
   section#contenu .le-cosmonaute {
-    background-position: 0 -80px;
+    background-position: 0 -109px;
   }
   section#contenu .la-taupe {
-    background-position: 0 -40px;
+    background-position: 0 -69px;
   }
 
 /**
@@ -290,11 +290,12 @@ article header p {
 }
 .borderimage article header p ,
 .borderimage article h1 {
+  border-width        : 0;
   border-bottom       : dotted 20px #000;
-  -moz-border-image   : url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
-  -webkit-border-image: url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
-  -o-border-image     : url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
-  border-image        : url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
+  -moz-border-image   : url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
+  -webkit-border-image: url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
+  -o-border-image     : url('/assets/sprite_20x169x20.png') 149 0 20 round;
+  border-image        : url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
   background          : none;
 }
   /* Character's images replacement */
@@ -350,7 +351,7 @@ article header p {
 
 a.has-icon {
   padding-left      : 22px;
-  background-image  : url('/assets/sprite_20x20.png');
+  background-image  : url('/assets/sprite_20x169x20.png');
   background-repeat : no-repeat;
 }
 #footer,
@@ -399,11 +400,12 @@ section#contenu li {
 .borderimage #header li a,
 .borderimage section#contenu li {
   padding-bottom      : 10px;
+  border-width        : 0;
   border-bottom       : dotted 20px #000;
-  -moz-border-image   : url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
-  -webkit-border-image: url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
-  -o-border-image     : url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
-  border-image        : url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
+  -moz-border-image   : url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
+  -webkit-border-image: url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
+  -o-border-image     : url('/assets/sprite_20x169x20.png') 149 0 20 round;
+  border-image        : url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
   background          : none;
 }
   #header li a,
