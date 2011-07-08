@@ -120,9 +120,6 @@ body {
   display: block;
 }
 .rss a {
-  /*background-position: 0 -40px;*/
-  background  : none !important;
-  padding-left: 0 !important;
 }
 
 /**
@@ -135,15 +132,17 @@ body {
 }
   #footer dl {
     margin-bottom     : 1.25em;
+    text-align        : center;
+  }
+  #footer > * {
     -moz-transition   : all 0.5s;
     -webkit-transition: all 0.5s;
     -o-transition     : all 0.5s;
     -ms-transition    : all 0.5s;
     transition        : all 0.5s;
-    text-align        : center;
     opacity           : 0;
   }
-  #footer.active dl {
+  #footer.active > * {
     opacity: 1;
   }
   #footer dl > * {
@@ -160,12 +159,6 @@ body {
     a.creative-commons {
       background-position:  0 0;
     }
-  #footer div {
-    opacity: 0;
-  }
-  #footer.active div {
-    opacity: 1;
-  }
     #footer div:after {
       content : '';
       position: absolute;
@@ -177,7 +170,29 @@ body {
     #footer.active div:after {
       content: none;
     }
-
+    #footer .ir {
+      -moz-transition     : all 0.1s ease-out;
+      -webkit-transition  : all 0.1s ease-out;
+      -o-transition       : all 0.1s ease-out;
+      -ms-transition      : all 0.1s ease-out;
+      transition          : all 0.1s ease-out;
+      margin              : auto;
+      width               : 5em;
+      height              : 2.5em;
+      background-image    : url('/assets/sprite2_20x49.png'),
+                            url('/assets/sprite2_20x49.png'),
+                            url('/assets/sprite2_20x49.png');
+      background-position : 50% 0.688em,
+                            0% 2.5em,
+                            100% 2.5em;
+    }
+    #footer .ir:hover,
+    #footer .ir:focus,
+    #footer .ir:active {
+      background-position : 50% 0.688em,
+                            0% 0.688em,
+                            100% 0.688em;
+    }
 
 /**
  * Content
@@ -250,7 +265,7 @@ section#contenu li {
     background-position: 0 -80px;
   }
   section#contenu .la-taupe {
-    background-position: 0 -120px;
+    background-position: 0 -40px;
   }
 
 /**
@@ -258,22 +273,28 @@ section#contenu li {
  * =post
  */
 article h1 {
-  min-height: 1.25em;
-  font: normal 3em/1.0417 BenjDesignosaur, sans-serif;
+  margin-bottom : 0.208em;
+  padding       : 0 0 0.625em;
+  background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
 }
 article header p {
   margin-bottom : 0.625em;
-  padding       : 1.875em 0;
+  padding       : 0 0 1.875em;
   background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
 }
+.borderimage article h1 {
+  padding: 0 0 0.208em;
+}
 .borderimage article header p {
-  padding             : 0.625em 0;
-  border              : dotted 20px #000;
-  border-width        : 20px 0;
-  -moz-border-image   : url('/assets/filet_20x20.png') 20 0 round;
-  -webkit-border-image: url('/assets/filet_20x20.png') 20 0 round;
-  -o-border-image     : url('/assets/filet_20x20.png') 20 0 round;
-  border-image        : url('/assets/filet_20x20.png') 20 0 round;
+  padding: 0 0 0.625em;
+}
+.borderimage article header p ,
+.borderimage article h1 {
+  border-bottom       : dotted 20px #000;
+  -moz-border-image   : url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
+  -webkit-border-image: url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
+  -o-border-image     : url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
+  border-image        : url('/assets/sprite2_20x49.png') 49 0 20 / 0 0 20px round;
   background          : none;
 }
   /* Character's images replacement */
@@ -378,12 +399,11 @@ section#contenu li {
 .borderimage #header li a,
 .borderimage section#contenu li {
   padding-bottom      : 10px;
-  border              : dotted 20px #000;
-  border-width        : 0 0 20px;
-  -moz-border-image   : url('/assets/filet_20x20.png') 0 0 20 round;
-  -webkit-border-image: url('/assets/filet_20x20.png') 0 0 20 round;
-  -o-border-image     : url('/assets/filet_20x20.png') 0 0 20 round;
-  border-image        : url('/assets/filet_20x20.png') 0 0 20 round;
+  border-bottom       : dotted 20px #000;
+  -moz-border-image   : url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
+  -webkit-border-image: url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
+  -o-border-image     : url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
+  border-image        : url('/assets/sprite2_20x49.png') 29 0 20 / 0 0 20px round;
   background          : none;
 }
   #header li a,

@@ -48,6 +48,10 @@
     {% if page.comments %}
     <section id ="commentaires" class="hidden">
       <h1>Commentaires</h1>
+
+      <!-- TODO Set the src attribute for disqus… -->
+      <a href="#comments" id="showcomments" onclick='document.getElementById("commentaires").className="showme";document.getElementById("disqus_script").src=""'>Afficher les commentaires</a>
+
       <div id="disqus_thread"></div><script id="disqus_script"></script>
     </section>
     {% endif %}
@@ -56,10 +60,6 @@
       <time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
       {{ page.date | date: "%d/%m/%Y" }}</time>
 
-      <!-- TODO Set the src attribute for disqus… -->
-      {% if page.comments %}
-      <a href="#comments" id="showcomments" onclick='document.getElementById("commentaires").className="showme";document.getElementById("disqus_script").src=""'>Afficher les commentaires</a>
-      {% endif %}
     </footer>
   </div></article>
 
