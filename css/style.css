@@ -130,7 +130,8 @@ body {
  * =footer
  */
 #footer {
-  clear: right;
+  clear   : right;
+  position: relative;
 }
   #footer dl {
     margin-bottom     : 1.25em;
@@ -165,6 +166,17 @@ body {
   #footer.active div {
     opacity: 1;
   }
+    #footer div:after {
+      content : '';
+      position: absolute;
+      top     : 0;
+      left    : 0;
+      height  : 100%;
+      width   : 100%;
+    }
+    #footer.active div:after {
+      content: none;
+    }
 
 
 /**
