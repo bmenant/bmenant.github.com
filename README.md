@@ -3,6 +3,8 @@ The data for the Benj’ Blog
 
 I use a Git repository, [Jekyll](https://github.com/mojombo/jekyll) and [GitHub Pages](http://pages.github.com/) for my blog activity. Because I wanted to [KISS](http://www.fov.com/kiss/index.htm).
 
+Also, an opportunity to discover Git (coming from Mercurial), and some HTML5/CSS3 experimental features.
+
 License
 -------
 
