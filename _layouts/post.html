@@ -28,12 +28,18 @@
 
   <article id="contenu"><div>
     <header>
+      {% if page.argument %}
       <h1>{{ page.title }}</h1>
+      <p class="argument">{{ page.argument }}</p>
+      {% else %}
+      <h1 class="argument">{{ page.title }}</h1>
+      {% endif %}
+
       <div class="visuallyhidden">
         <a href="#navigation">Passer l’article pour aller au menu de navigation</a>
       </div>
 
-      <p>
+      <p class="personnages">
         <span class="visuallyhidden">Avec</span>
         {% for character in page.characters %}
         <span class="iir {{ character | downcase | replace: ' ', '-' }}">

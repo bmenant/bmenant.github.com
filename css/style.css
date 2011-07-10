@@ -65,9 +65,9 @@ input:valid, textarea:valid   {  }
 input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
 .no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
 
-::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
-::selection { background:#FF5E99; color:#fff; text-shadow: none; }
-a:link { -webkit-tap-highlight-color: #FF5E99; }
+::-moz-selection{ background: #FF4444; color:#fff; text-shadow: none; }
+::selection { background:#FF4444; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #FF4444; }
 
 button {  width: auto; overflow: visible; }
 .ie7 img { -ms-interpolation-mode: bicubic; }
@@ -272,24 +272,33 @@ section#contenu li {
  * Post's content
  * =post
  */
-article h1 {
+article h1.argument {
   margin-bottom : 0.208em;
-  padding       : 0 0 0.625em;
+  padding       : 0 0 0.8333em;
   background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
 }
-article header p {
-  margin-bottom : 0.625em;
-  padding       : 0 0 1.875em;
+article p.argument {
+  margin        : 0.625em 0;
+  padding-bottom: 2.5em;
+  font-style    : italic;
   background    : url('/assets/filet_20x20.png') 0 100% repeat-x;
 }
-.borderimage article h1 {
-  padding: 0 0 0.208em;
+article .personnages {
+  margin    : 0 0 1.25em;
+  padding   : 0 0 1.875em;
+  background: url('/assets/filet_20x20.png') 0 100% repeat-x;
 }
-.borderimage article header p {
-  padding: 0 0 0.625em;
+.borderimage article h1.argument {
+  padding-bottom: 0.417em;
 }
-.borderimage article header p ,
-.borderimage article h1 {
+.borderimage article p.argument {
+  padding-bottom: 1.25em;
+}
+.borderimage article .personnages {
+  padding-bottom: 0.625em;
+}
+.borderimage article .argument,
+.borderimage article .personnages {
   border-width        : 0;
   border-bottom       : dotted 20px #000;
   -moz-border-image   : url('/assets/sprite_20x169x20.png') 149 0 20 / 0 0 20px round;
@@ -337,6 +346,10 @@ article header p {
     -ms-transform-origin    : 45% 52%;
     transform               : rotate(10080deg);
     transform-origin        : 45% 52%;
+  }
+  article p {
+    padding-left  : 2.5em;
+    padding-right : 2.5em;
   }
 
   /* Comments =comments */
