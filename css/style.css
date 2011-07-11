@@ -92,6 +92,10 @@ a:focus, a:active { text-decoration: underline; }
  *  3.2.......Post (post page)
  *    3.2.1...Comments
  * 4..........Common (common styles)
+ * ...........
+ * 5..........Mobiles
+ *  5.1.......IEMobile
+ *  5.2.......MediaQueries (small screens)
  *
  */
 
@@ -104,7 +108,7 @@ body {
 
 /**
  * Header
- * =header
+ * 1=header
  */
 .description {
   font  : italic 0.813em/1.538 BenjCabin, sans-serif;
@@ -124,7 +128,7 @@ body {
 
 /**
  * Footer
- * =footer
+ * 2=footer
  */
 #footer {
   clear   : right;
@@ -217,7 +221,7 @@ body {
 
 /**
  * Content
- * =content
+ * 3=content
  */
 #contenu {
   float   : left;
@@ -230,7 +234,7 @@ body {
 
 /**
  * List of posts
- * =index
+ * 3.1=index
  */
 section#contenu h1 {
   font  : normal 2em/1.875 BenjDesignosaur, sans-serif;
@@ -280,22 +284,10 @@ section#contenu li {
     margin-right    : 5px;
     background-image: url('/assets/sprite_20x169x20.png');
   }
-  section#contenu .le-chat {
-    background-position: 0 -89px;
-  }
-  section#contenu .le-robot {
-    background-position: 0 -129px;
-  }
-  section#contenu .le-cosmonaute {
-    background-position: 0 -109px;
-  }
-  section#contenu .la-taupe {
-    background-position: 0 -69px;
-  }
 
 /**
  * Post's content
- * =post
+ * 3.2=post
  */
 article h1.argument {
   margin-bottom : 0.208em;
@@ -376,15 +368,34 @@ article .personnages {
     padding-left  : 2.5em;
     padding-right : 2.5em;
   }
+  /**
+   * Répliques
+   * @see .iir (inline image replacement)
+   */
+  article b {
+    width               : 20px;
+    height              : 20px;
+    background-image    : url('/assets/sprite_20x169x20.png');
+  }
 
-  /* Comments =comments */
+  /* Didascalies */
+  article i {
+    font-style: italic;
+  }
+
+  /**
+   * Comments
+   * 3.2.1=comments
+   *
+   * @todo See Disqus or something else
+   */
   .showme {
     /* @todo Add transition, here */
   }
 
 /**
  * Common styles
- * =common
+ * 4=common
  */
 
 a.has-icon {
@@ -450,11 +461,36 @@ section#contenu li {
   section#contenu li a {
     font: normal 2em/1.25 BenjDesignosaur, sans-serif;
   }
+/* Characters image replacement */
+article b.le-chat,
+article b .chat,
+section#contenu .le-chat,
+section#contenu .chat {
+  background-position: 0 -89px;
+}
+article b.le-robot,
+article b .robot,
+section#contenu .le-robot,
+section#contenu .robot {
+  background-position: 0 -129px;
+}
+article b.le-cosmonaute,
+article b .cosmonaute,
+section#contenu .le-cosmonaute,
+section#contenu .cosmonaute  {
+  background-position: 0 -109px;
+}
+article b.la-taupe,
+article b .taupe,
+section#contenu .la-taupe,
+section#contenu .taupe {
+  background-position: 0 -69px;
+}
 
 
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
-.iir { display: inline-block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; vertical-align: bottom; }
+.iir, article b { display: inline-block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; vertical-align: bottom; }
 .ie7 .iir,
 .iem .iir {
   display : inline;
@@ -471,48 +507,57 @@ section#contenu li {
 
 
 /**
- * IE Mobiles
+ * Mobiles
+ * 5=mobiles
  */
-.iem body {
-  max-width: none;
-  min-width: 0;
-}
-.iem #header,
-.iem #footer,
-.iem #contenu {
-  float: none;
-  width: auto;
-}
-  #header > *,
-  #footer > *,
-  #contenu > div {
-    margin: 0 5%;
-  }
-.iem #footer {
-  visibility: hidden;
-}
-.iem #footer.active {
-  visibility: visible;
-  display   : block;
-  zoom      : 1;
-}
-  .iem section#contenu h1,
-  .iem #footer h2 {
-    clip    : auto;
-    height  : auto;
-    position: static;
-    width   : auto;
-  }
-  .iem #item-a-propos.active a {
-    display: inline-block;
-  }
-  .iem article + #header h1 {
-    margin-top: 0.625em;
-  }
 
-/**
- * Mobiles (Media Queries)
- */
+  /**
+   * IE mobile (windows phone 7)
+   * 5.1=IEMobile
+   */
+  .iem body {
+    max-width: none;
+    min-width: 0;
+  }
+  .iem #header,
+  .iem #footer,
+  .iem #contenu {
+    float: none;
+    width: auto;
+  }
+    #header > *,
+    #footer > *,
+    #contenu > div {
+      margin: 0 5%;
+    }
+  .iem #footer {
+    visibility: hidden;
+  }
+  .iem #footer.active {
+    visibility: visible;
+    display   : block;
+    zoom      : 1;
+  }
+    .iem section#contenu h1,
+    .iem #footer h2 {
+      clip    : auto;
+      height  : auto;
+      position: static;
+      width   : auto;
+    }
+    .iem #item-a-propos.active a {
+      display: inline-block;
+    }
+    .iem article + #header h1 {
+      margin-top: 1.25em;
+    }
+
+  /**
+   * Mobiles (Media Queries)
+   * 5.2=mediaqueries
+   *
+   * For screen's or window's width lower than 700px.
+   */
 @media screen and (max-width:700px) {
   html {
     -webkit-text-size-adjust:none;
@@ -543,8 +588,8 @@ section#contenu li {
     #item-a-propos.active a {
       display: inline-block;
     }
-  #header h1 {
-    margin-top: 0.625em;
+  article + #header h1 {
+    margin-top: 1.25em;
   }
 }
 
