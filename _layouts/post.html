@@ -52,7 +52,7 @@
     {{ content }}
 
     {% if page.comments %}
-    <section id ="commentaires" class="hidden">
+    <section id ="commentaires" class="hidden" aria-live="polite">
       <h1>Commentaires</h1>
 
       <!-- TODO Set the src attribute for disqus… -->
@@ -63,8 +63,8 @@
     {% endif %}
 
     <footer id="meta">
-      <time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
-      {{ page.date | date: "%d/%m/%Y" }}</time>
+      Publié le <time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+      {{ page.date | date: "%d/%m/%Y" }}</time>.
 
     </footer>
   </div></article>

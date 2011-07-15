@@ -174,12 +174,14 @@ body {
     margin-top: 0.625em;
     content   : '';
   }
+
     a.github {
       background-position: 0 -49px;
     }
     a.creative-commons {
       background-position:  0 -29px;
     }
+    /* Interface's mask */
     #footer div:after {
       content : '';
       position: absolute;
@@ -387,8 +389,15 @@ article .personnages {
   article .didascalie {
     margin: 2.5em 0 1.875em;
   }
-  article .didascalie:first-child {
-    margin-top: 0;
+  article .illustration {
+    padding   : 0;
+    text-align: center;
+  }
+  article .illustration img {
+    display   : block;
+    margin    : 0 auto 0.625em;
+    max-width : 100%;
+    /* @todo check for vertical huge images */
   }
 
   /**
@@ -396,9 +405,35 @@ article .personnages {
    * 3.2.1=comments
    *
    * @todo See Disqus or something else
+   * @todo Style H1 like menu or post title in HP
    */
-  .showme {
-    /* @todo Add transition, here */
+  #commentaires {
+    -moz-transition   : all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition     : all 0.5s;
+    -ms-transition    : all 0.5s;
+    transition        : all 0.5s;
+    opacity           : 0;
+  }
+  .ie7 #commentaires {
+    filter: alpha(opacity=0);
+  }
+  .ie8 #commentaires {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  }
+  #commentaires.showme {
+    opacity: 1;
+  }
+  .ie7 #commentaires.showme  {
+    filter: alpha(opacity=100);
+  }
+  .ie8 #commentaires.showme  {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  }
+  article footer {
+    margin    : 2.5em 0;
+    text-align: right;
+    color: #666; color: rgba(0, 0, 0, 0.6);
   }
 
 /**
@@ -471,25 +506,25 @@ section#contenu li {
   }
 /* Characters image replacement (20x20) */
 article b.le-chat,
-article b .chat,
+article b.chat,
 section#contenu .le-chat,
 section#contenu .chat {
   background-position: 0 -89px;
 }
 article b.le-robot,
-article b .robot,
+article b.robot,
 section#contenu .le-robot,
 section#contenu .robot {
   background-position: 0 -129px;
 }
 article b.le-cosmonaute,
-article b .cosmonaute,
+article b.cosmonaute,
 section#contenu .le-cosmonaute,
 section#contenu .cosmonaute  {
   background-position: 0 -109px;
 }
 article b.la-taupe,
-article b .taupe,
+article b.taupe,
 section#contenu .la-taupe,
 section#contenu .taupe {
   background-position: 0 -69px;
@@ -517,6 +552,8 @@ section#contenu .taupe {
 /**
  * Mobiles
  * 5=mobiles
+ *
+ * @todo Check posts content on mobile devices
  */
 
   /**
