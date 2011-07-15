@@ -365,6 +365,7 @@ article .personnages {
     transform-origin        : 45% 52%;
   }
   article p {
+    margin        : 0.625em 0;
     padding-left  : 2.5em;
     padding-right : 2.5em;
   }
@@ -373,14 +374,21 @@ article .personnages {
    * @see .iir (inline image replacement)
    */
   article b {
-    width               : 20px;
-    height              : 20px;
-    background-image    : url('/assets/sprite_20x169x20.png');
+    width           : 20px;
+    height          : 20px;
+    margin-top      : 0.625em;
+    background-image: url('/assets/sprite_20x169x20.png');
   }
 
   /* Didascalies */
   article i {
     font-style: italic;
+  }
+  article .didascalie {
+    margin: 2.5em 0 1.875em;
+  }
+  article .didascalie:first-child {
+    margin-top: 0;
   }
 
   /**
@@ -461,7 +469,7 @@ section#contenu li {
   section#contenu li a {
     font: normal 2em/1.25 BenjDesignosaur, sans-serif;
   }
-/* Characters image replacement */
+/* Characters image replacement (20x20) */
 article b.le-chat,
 article b .chat,
 section#contenu .le-chat,
