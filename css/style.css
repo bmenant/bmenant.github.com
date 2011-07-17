@@ -400,9 +400,9 @@ article .personnages {
     -moz-border-radius    : 0.625em;
     -webkit-border-radius : 0.625em;
     border-radius         : 0.625em;
-    -moz-box-shadow       : inset 0 0 0 1em #000, 0 0 0.313em #000;
-    -webkit-box-shadow    : inset 0 0 0 1em #000, 0 0 0.313em #000;
-    box-shadow            : inset 0 0 0 1em #000, 0 0 0.313em #000;
+    -moz-box-shadow       : inset 0 0 0 1px #000, 0 0 0.313em #000;
+    -webkit-box-shadow    : inset 0 0 0 1px #000, 0 0 0.313em #000;
+    box-shadow            : inset 0 0 0 1px #000, 0 0 0.313em #000;
     /* @todo check for vertical huge images */
   }
 
