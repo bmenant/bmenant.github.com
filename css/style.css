@@ -191,7 +191,9 @@ body {
       width   : 100%;
     }
     #footer.active div:after {
-      content: none;
+      content : none;
+      height  : 0;
+      width   : 0;
     }
     #footer .ir {
       margin              : auto;
@@ -539,7 +541,7 @@ section#contenu .taupe {
 
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
-.iir, article b { display: inline-block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; vertical-align: bottom; }
+.iir, article b { display: inline-block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ie7 .iir,
 .iem .iir {
   display : inline;
