@@ -1,100 +1,101 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="fr" class="no-js ie6" dir="ltr"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="fr" class="no-js ie7" dir="ltr"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="fr" class="no-js ie8" dir="ltr"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="fr" class="no-js ie9" dir="ltr"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="fr" class="no-js" dir="ltr"> <!--<![endif]-->
+<!--[if (IE 7)&!(IEMobile) ]> <html lang="fr" class="no-js ie7" dir="ltr"> <![endif]-->
+<!--[if IE 8 ]>               <html lang="fr" class="no-js ie8" dir="ltr"> <![endif]-->
+<!--[if IE 9 ]>               <html lang="fr" class="no-js ie9" dir="ltr"> <![endif]-->
+<!--[if (IE 7)&(IEMobile) ]>  <html lang="fr" class="no-js iem" dir="ltr"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)|!(IEMobile)]><!--> <html lang="fr" class="no-js" dir="ltr"> <!--<![endif]-->
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
 	<title>Benj’ Blog, page inexistante</title>
-	<meta name="author" content="Benjamin MENANT" />
+  <meta name="description" content="Des personnages imaginaires dialoguent à propos du Web,
+    de ses technologies, de ses usages et d’autres choses, selon les humeurs." />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" />
 
-	<link rel="shortcut icon" href="/favicon.ico" />
-	<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-	<link rel="stylesheet" href="/css/style.css?v=2" />
-	<link rel="author" href="/humans.txt" />
+  <meta name="author" content="Benjamin MENANT" />
+  <link rel="author" href="/humans.txt" />
 
-	<script src="/js/libs/modernizr-1.7.min.js"></script>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.min.css?v=1" />
+
+  <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
-<body>
-	<header>
-		<h1><a href="/">Le Benj’ Blog</a></h1>
+<body class="clearfix">
 
-		<nav id="acces-rapide">
-			<h2 class="visuallyhidden">Accès rapides</h2>
-			<ul>
-				<li><a href="#contenu">Contenu</a></li>
-				<li><a href="#navigation">Navigation</a></li>
-			</ul>
-		</nav>
-
-		<p class="description">
-			Le Benj’ blog reccueille les dialogues de personnages imaginaires.
-			Ils y échangent librement et ouvertement, principalement à propos du Web,
-			de ses technologies et de ses usages.
-		</p>
-
-		<nav id="navigation">
-			<h2 class="visuallyhidden">Navigation</h2>
-			<ul>
-				<!-- Lien vers la liste des billets -->
-				<li class="active"><a	href="/#contenu"
-								title="Liste de tous les dialogues publiés">Dialogues</a></li>
-				<!-- Lien vers le portail -->
-				<li><a	href="http://menant-benjamin.fr/"
-								title="Quelques informations à propos de l’auteur">Benj’</a></li>
-				<!-- Flux de syndication -->
-				<li class="bouton-rss"><a href="/index.xml">
-					<svg viewbox="30 30 190 190">
-						<circle cx="68" cy="189" r="24"/>
-						<path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z"/>
-						<path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z"/>
-					</svg>
-					Abonnement RSS
-				</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<section id="contenu" class="error-404">
+	<section id="contenu" class="error-404"><div>
 		<h1>Page inexistante (erreur 404)</h1>
 
 		<p>Consultez la liste des <a href="/">dialogues du Benj’ Blog</a>.</p>
-	</section>
+	</div></section>
 
+  <header id="header">
+    <h1><a href="/" title="Page d’accueil">Le Benj’ Blog</a></h1>
 
-	<footer>
-		<dl>
-			<dt>Le Benj’ blog est hébergé sur</dt>
-				<dd><a href="https://github.com/bmenant/bmenant.github.com" class="github">
-				GitHub Pages</a>.</dd>
-			<dt>Les contenus de cette page sont
-			<span title="Sauf mention contraire explicite">mis à disposition</span> selon</dt>
-				<dd>les termes de la
-				<a	rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr"
-						class="creative-commons">
-					<svg viewBox="5.5 -3.5 64 64">
-						<g>
-							<circle fill="#FFFFFF" cx="37.785" cy="28.501" r="28.836"/>
-							<path d="M37.441-3.5c8.951,0,16.572,3.125,22.857,9.372c3.008,3.009,5.295,6.448,6.857,10.314   c1.561,3.867,2.344,7.971,2.344,12.314c0,4.381-0.773,8.486-2.314,12.313c-1.543,3.828-3.82,7.21-6.828,10.143   c-3.123,3.085-6.666,5.448-10.629,7.086c-3.961,1.638-8.057,2.457-12.285,2.457s-8.276-0.808-12.143-2.429   c-3.866-1.618-7.333-3.961-10.4-7.027c-3.067-3.066-5.4-6.524-7-10.372S5.5,32.767,5.5,28.5c0-4.229,0.809-8.295,2.428-12.2   c1.619-3.905,3.972-7.4,7.057-10.486C21.08-0.394,28.565-3.5,37.441-3.5z M37.557,2.272c-7.314,0-13.467,2.553-18.458,7.657   c-2.515,2.553-4.448,5.419-5.8,8.6c-1.354,3.181-2.029,6.505-2.029,9.972c0,3.429,0.675,6.734,2.029,9.913   c1.353,3.183,3.285,6.021,5.8,8.516c2.514,2.496,5.351,4.399,8.515,5.715c3.161,1.314,6.476,1.971,9.943,1.971   c3.428,0,6.75-0.665,9.973-1.999c3.219-1.335,6.121-3.257,8.713-5.771c4.99-4.876,7.484-10.99,7.484-18.344   c0-3.543-0.648-6.895-1.943-10.057c-1.293-3.162-3.18-5.98-5.654-8.458C50.984,4.844,44.795,2.272,37.557,2.272z M37.156,23.187   l-4.287,2.229c-0.458-0.951-1.019-1.619-1.685-2c-0.667-0.38-1.286-0.571-1.858-0.571c-2.856,0-4.286,1.885-4.286,5.657   c0,1.714,0.362,3.084,1.085,4.113c0.724,1.029,1.791,1.544,3.201,1.544c1.867,0,3.181-0.915,3.944-2.743l3.942,2   c-0.838,1.563-2,2.791-3.486,3.686c-1.484,0.896-3.123,1.343-4.914,1.343c-2.857,0-5.163-0.875-6.915-2.629   c-1.752-1.752-2.628-4.19-2.628-7.313c0-3.048,0.886-5.466,2.657-7.257c1.771-1.79,4.009-2.686,6.715-2.686   C32.604,18.558,35.441,20.101,37.156,23.187z M55.613,23.187l-4.229,2.229c-0.457-0.951-1.02-1.619-1.686-2   c-0.668-0.38-1.307-0.571-1.914-0.571c-2.857,0-4.287,1.885-4.287,5.657c0,1.714,0.363,3.084,1.086,4.113   c0.723,1.029,1.789,1.544,3.201,1.544c1.865,0,3.18-0.915,3.941-2.743l4,2c-0.875,1.563-2.057,2.791-3.541,3.686   c-1.486,0.896-3.105,1.343-4.857,1.343c-2.896,0-5.209-0.875-6.941-2.629c-1.736-1.752-2.602-4.19-2.602-7.313   c0-3.048,0.885-5.466,2.658-7.257c1.77-1.79,4.008-2.686,6.713-2.686C51.117,18.558,53.938,20.101,55.613,23.187z"/>
-						</g>
-					</svg>
-					Licence Creative Commons
-					(paternité, pas d’utilisation commerciale, partage à l’identique)</a>.</dd>
-			<dt>Inspirations, pompages&nbsp;:</dt>
-				<dd><a href="http://html5boilerplate.com/">HTML5&nbsp;★&nbsp;Boilerplate</a>,</dd>
-				<dd><a href="http://paulroujet.com/">Paul Rouget</a>,</dd>
-				<dd><a href="http://www.alainsechas.com/">Alain Séchat</a>…</dd>
-		</dl>
-	</footer>
+    <p class="description">
+      Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement,
+      à propos du Web, de tout et de rien…
+    </p>
 
-	<!--[if lt IE 7 ]>
-	<script src="js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg');</script>
-	<![endif]-->
+    <nav id="navigation">
+      <h2 class="visuallyhidden">Navigation</h2>
+      <ul>
+        <!-- Lien vers la liste des billets -->
+        <li class="contenu">
+          <a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
+        <!-- Flux de syndication -->
+        <li class="rss">
+          <a href="/index.xml">Abonnement RSS</a></li>
+        <!-- Lien vers le portail -->
+        <li class="perso">
+          <a  href="http://menant-benjamin.fr/"
+              title="Quelques informations à propos de l’auteur">Benj’</a></li>
+        <li id="item-a-propos">
+          <a href="#a-propos" title="Mentions légales et crédits du Benj’ blog"
+             onclick='document.getElementById("footer").className="active";document.getElementById("item-a-propos").className="active";'>
+            À propos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <footer id="footer" aria-live="off">
+    <h2 class="visuallyhidden">À propos</h2>
+    <dl id="a-propos">
+      <dt>Hébergement du Benj’ blog sur</dt>
+        <dd><a href="https://github.com/bmenant/bmenant.github.com" class="has-icon github">GitHub Pages</a>.</dd>
+      <dt>Contenus du blog <span title="Sauf mention contraire explicite">mis à disposition</span> selon les termes de la Licence</dt>
+        <dd><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr" class="has-icon creative-commons">Creative Commons (paternité, pas d’utilisation commerciale, partage à l’identique)</a>.</dd>
+      <dt>Inspirations, pompages&nbsp;:</dt>
+        <dd><a href="http://html5boilerplate.com/">HTML5&nbsp;★&nbsp;Boilerplate</a>,</dd>
+        <dd><a href="http://paulrouget.com/">Paul Rouget</a>,</dd>
+        <dd><a href="https://gist.github.com/1007813">Johan Sundström</a>,</dd>
+        <dd><a href="http://www.alainsechas.com/">Alain Séchat</a>,</dd>
+        <dd><a href="http://openfontlibrary.org/font/designosaur">Designosaur</a>,</dd>
+        <dd><a href="http://www.impallari.com/cabin/">Cabin</a>…</dd>
+      <dt>Collectes de données anonymes,</dt>
+        <dd>à des fins statistiques,</dd>
+        <dd>réalisées avec <a href="http://piwik.org/">Piwik</a>&nbsp;;</dd>
+        <dd>vous pouvez <a href="http://stats.menant-benjamin.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=fr">refuser ces collectes</a>.</dd>
+    </dl>
+    <div><a href="#contenu" class="ir"
+            onclick='document.getElementById("footer").className="";document.getElementById("item-a-propos").className="";'>
+      Retourner au contenu
+    </a></div>
+  </footer>
+
+  <!-- Piwik Tracking Code -->
+  <script>
+  var pkBaseURL=(("https:"==document.location.protocol)?"https://stats.menant-benjamin.fr/":"http://stats.menant-benjamin.fr/");document.write(unescape("%3Cscript src='"+pkBaseURL+"piwik.js'%3E%3C/script%3E"));
+  </script><script>
+  try{var piwikTracker=Piwik.getTracker(pkBaseURL+"piwik.php",1);piwikTracker.trackPageView();piwikTracker.enableLinkTracking()}catch(err){};
+  </script><noscript>
+    <p><img src="http://stats.menant-benjamin.fr/piwik.php?idsite=1" style="border:0" alt="" /></p>
+  </noscript>
+  <!-- End Piwik -->
+
 </body>
 </html>

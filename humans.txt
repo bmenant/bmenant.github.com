@@ -11,5 +11,8 @@
 /* SITE */
     Standards: HTML5, CSS3
     Components: Modernizr, Piwik, Disqus
-    Software: Jekyll (GitHub Pages)
+    Software: Jekyll
 
+/* TOOLS */
+    Softwares: Komodo Edit, Git, Firebug, The Gimp, Inkscape, Trimage Compressor
+    Services: online YUI compressor, fontsquirrel fontface kit creator
