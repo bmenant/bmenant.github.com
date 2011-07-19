@@ -56,7 +56,8 @@
       {{ page.date | date: "%d/%m/%Y" }}</time>.</p>
 
       {% if page.comments %}
-      <p><a href="#commentaires" id="showcomments" onclick='document.getElementById("commentaires").className="active";document.getElementById("disqus_script").src="http://disqus.com/forums/benj-blog/embed.js"'>Lire les commentaires</a>.</p>
+      <script>var disqus_shortname='benj-blog',disqus_identifier='{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',disqus_url='http://blog.menant-benjamin.fr{{ page.url }}',disqus_title='{{ page.title }}';</script>
+      <p><a href="#commentaires" id="showcomments" onclick='document.getElementById("commentaires").className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";'>Lire les commentaires</a>.</p>
       {% endif %}
     </footer>
 
@@ -64,12 +65,7 @@
     <section id ="commentaires" aria-live="polite">
       <h1>Commentaires</h1>
 
-      <div id="disqus_thread"></div><script>
-        var disqus_shortname  = 'benj-blog',
-            disqus_identifier = '{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',
-            disqus_url        = 'http://blog.menant-benjamin.fr{{ page.url }}',
-            disqus_title      = '{{ page.title }}';
-      </script><script id="disqus_script"></script>
+      <div id="disqus_thread"></div><script id="disqus_script"></script>
       <noscript>Activez JavaScript pour voir les <a href="http://disqus.com/?ref_noscript">commentaires recueillis par Disqus.</a></noscript>
     </section>
     {% endif %}
