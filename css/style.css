@@ -487,6 +487,7 @@ article .personnages {
    * 3.2.1=comments
    */
   #commentaires {
+    min-height        : 30em;
     -moz-transition   : all 0.5s;
     -webkit-transition: all 0.5s;
     -o-transition     : all 0.5s;

@@ -64,7 +64,12 @@
     <section id ="commentaires" aria-live="polite">
       <h1>Commentaires</h1>
 
-      <div id="disqus_thread"></div><script id="disqus_script"></script>
+      <div id="disqus_thread"></div><script>
+        var disqus_shortname  = 'benj-blog',
+            disqus_identifier = '{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',
+            disqus_url        = 'http://blog.menant-benjamin.fr{{ page.url }}',
+            disqus_title      = '{{ page.title }}';
+      </script><script id="disqus_script"></script>
       <noscript>Activez JavaScript pour voir les <a href="http://disqus.com/?ref_noscript">commentaires recueillis par Disqus.</a></noscript>
     </section>
     {% endif %}
