@@ -1,37 +1,26 @@
-  <header id="header">
-    {% if page.url == '/index.html' %}
-    <h1>Le Benj’ Blog</h1>
-    {% else %}
-    <h1><a href="/" title="Page d’accueil">Le Benj’ Blog</a></h1>
-    {% endif %}
-
-    <p class="description">
-      Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement,
-      à propos du Web, de tout et de rien…
-    </p>
-
-    <nav id="navigation">
-      <h2 class="visuallyhidden">Navigation</h2>
-      <ul>
-        <!-- Lien vers la liste des billets -->
-        {% if page.url == '/index.html' %}
-        <li class="contenu active">
-          <a href="#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
-        {% else %}
-        <li class="contenu">
-          <a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
-        {% endif %}
-        <!-- Flux de syndication -->
-        <li class="rss">
-          <a href="/index.xml">Abonnement RSS</a></li>
-        <!-- Lien vers le portail -->
-        <li class="perso">
-          <a  href="http://menant-benjamin.fr/"
-              title="Quelques informations à propos de l’auteur">Benj’</a></li>
-        <li id="item-a-propos">
-          <a href="#a-propos" title="Mentions légales et crédits du Benj’ blog"
-             onclick='document.getElementById("footer").className="active";document.getElementById("item-a-propos").className="active";'>
-            À propos</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Site wide header -->
+<header id="header">
+  {% if page.url == '/index.html' %}
+  <h1>Le Benj’ Blog</h1>
+  {% else %}
+  <h1><a href="/" title="Page d’accueil">Le Benj’ Blog</a></h1>
+  {% endif %}
+  <p class="description">Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement, à propos du Web, de tout et de rien…</p>
+  <nav id="navigation">
+    <h2 class="visuallyhidden">Navigation</h2>
+    <ul>
+      <!-- To the list of posts -->
+      {% if page.url == '/index.html' %}
+      <li class="contenu active"><a href="#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
+      {% else %}
+      <li class="contenu"><a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
+      {% endif %}
+      <!-- To the ATOM feed -->
+      <li class="rss"><a href="/index.xml">Abonnement RSS</a></li>
+      <!-- To the author Web page -->
+      <li class="perso"><a  href="http://menant-benjamin.fr/" title="Quelques informations à propos de l’auteur">Benj’</a></li>
+      <li id="item-a-propos"><a href="#a-propos" title="Mentions légales et crédits du Benj’ blog" onclick='document.getElementById("footer").className="active";document.getElementById("item-a-propos").className="active";'>À propos</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- End header -->

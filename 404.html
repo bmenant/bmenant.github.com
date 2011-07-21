@@ -12,10 +12,10 @@
   <meta name="description" content="Des personnages imaginaires dialoguent à propos du Web,
     de ses technologies, de ses usages et d’autres choses, selon les humeurs." />
 
-  <link rel="alternate" type="application/atom+xml" href="/index.xml" />
-
   <meta name="author" content="Benjamin MENANT" />
   <link rel="author" href="/humans.txt" />
+
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" />
 
   <link rel="shortcut icon" href="/favicon.ico" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -26,42 +26,23 @@
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
 <body class="clearfix">
-
 	<section id="contenu" class="error-404"><div>
 		<h1>Page inexistante (erreur 404)</h1>
-
 		<p>Consultez la liste des <a href="/">dialogues du Benj’ Blog</a>.</p>
 	</div></section>
-
   <header id="header">
     <h1><a href="/" title="Page d’accueil">Le Benj’ Blog</a></h1>
-
-    <p class="description">
-      Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement,
-      à propos du Web, de tout et de rien…
-    </p>
-
+    <p class="description">Reccueil des dialogues de personnages imaginaires qui échangent librement et ouvertement, à propos du Web, de tout et de rien…</p>
     <nav id="navigation">
       <h2 class="visuallyhidden">Navigation</h2>
       <ul>
-        <!-- Lien vers la liste des billets -->
-        <li class="contenu">
-          <a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
-        <!-- Flux de syndication -->
-        <li class="rss">
-          <a href="/index.xml">Abonnement RSS</a></li>
-        <!-- Lien vers le portail -->
-        <li class="perso">
-          <a  href="http://menant-benjamin.fr/"
-              title="Quelques informations à propos de l’auteur">Benj’</a></li>
-        <li id="item-a-propos">
-          <a href="#a-propos" title="Mentions légales et crédits du Benj’ blog"
-             onclick='document.getElementById("footer").className="active";document.getElementById("item-a-propos").className="active";'>
-            À propos</a></li>
+        <li class="contenu"><a href="/#contenu" title="Liste de tous les dialogues publiés">Dialogues</a></li>
+        <li class="rss"><a href="/index.xml">Abonnement RSS</a></li>
+        <li class="perso"><a  href="http://menant-benjamin.fr/" title="Quelques informations à propos de l’auteur">Benj’</a></li>
+        <li id="item-a-propos"><a href="#a-propos" title="Mentions légales et crédits du Benj’ blog" onclick='document.getElementById("footer").className="active";document.getElementById("item-a-propos").className="active";'>À propos</a></li>
       </ul>
     </nav>
   </header>
-
   <footer id="footer" aria-live="off">
     <h2 class="visuallyhidden">À propos</h2>
     <dl id="a-propos">
@@ -81,21 +62,9 @@
         <dd>réalisées avec <a href="http://piwik.org/">Piwik</a>&nbsp;;</dd>
         <dd>vous pouvez <a href="http://stats.menant-benjamin.fr/index.php?module=CoreAdminHome&amp;action=optOut&amp;language=fr">refuser ces collectes</a>.</dd>
     </dl>
-    <div><a href="#contenu" class="ir"
-            onclick='document.getElementById("footer").className="";document.getElementById("item-a-propos").className="";'>
-      Retourner au contenu
-    </a></div>
+    <div><a href="#contenu" class="ir" onclick='document.getElementById("footer").className="";document.getElementById("item-a-propos").className="";'>Retourner au contenu</a></div>
   </footer>
-
-  <!-- Piwik Tracking Code -->
-  <script>
-  var pkBaseURL=(("https:"==document.location.protocol)?"https://stats.menant-benjamin.fr/":"http://stats.menant-benjamin.fr/");document.write(unescape("%3Cscript src='"+pkBaseURL+"js/'%3E%3C/script%3E"));
-  </script><script>
-  try{var piwikTracker=Piwik.getTracker(pkBaseURL+"piwik.php",1);piwikTracker.trackPageView();piwikTracker.enableLinkTracking()}catch(err){};
-  </script><noscript>
-    <p><img src="http://stats.menant-benjamin.fr/piwik.php?idsite=1" style="border:0" alt="" /></p>
-  </noscript>
-  <!-- End Piwik -->
-
+  <script>var pkBaseURL=(("https:"==document.location.protocol)?"https://stats.menant-benjamin.fr/":"http://stats.menant-benjamin.fr/");document.write(unescape("%3Cscript src='"+pkBaseURL+"js/'%3E%3C/script%3E"));</script><script>try{var piwikTracker=Piwik.getTracker(pkBaseURL+"piwik.php",1);piwikTracker.trackPageView();piwikTracker.enableLinkTracking()}catch(err){};</script>
+	<noscript><p><img src="http://stats.menant-benjamin.fr/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
 </body>
 </html>
