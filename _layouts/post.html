@@ -62,9 +62,8 @@
       <script>var disqus_shortname='benj-blog',disqus_identifier='{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',disqus_url='http://blog.menant-benjamin.fr{{ page.url }}',disqus_title='{{ page.title }}';</script>
       <p class="showcomments">
         <span>Afficher<span class="visuallyhidden"> les</span></span>
-        <a href="http://server/" id="showcomments" title="Le dialogue continue…" onclick='document.getElementById("commentaires").className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";this.parentNode.className+=" active";' >commentaires</a>
+        <a href="#commentaires" id="showcomments" title="Le dialogue continue…" onclick='document.getElementById("commentaires").className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";this.parentNode.className+=" active";' >commentaires</a>
       </p>
-      <script>document.getElementById('showcomments').href="#commentaires"</script>
       {% endif %}
     </footer>
     {% if page.comments %}
