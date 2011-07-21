@@ -499,18 +499,18 @@ article .personnages {
   }
     .showcomments a {
       display: block;
+      text-transform: capitalize;
     }
     p.showcomments.active a {
       text-decoration: line-through;
     }
-      .showcomments a:first-letter {
-        text-transform: uppercase;
-      }
     .showcomments span {
       float         : right;
-      line-height   : 1.875em;
       margin-top    : 0.625em;
+      font          : 0.5em/1.875 BenjCabin;
+      text-shadow   : none;
       text-transform: lowercase;
+      color         : #444;
       opacity       : 0;
     }
       .showcomments span:before {
