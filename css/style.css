@@ -307,7 +307,7 @@ section#contenu li {
   }
   section#contenu li div {
     float : right;
-    color : transparent;
+    color: #fff;
   }
   section#contenu li time {
     color : #CCC; color: rgba(0, 0, 0, 0.2);
