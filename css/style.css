@@ -475,7 +475,7 @@ article .personnages {
     margin  : 0;
     padding : 0;
   }
-  article footer p:first-child {
+  article footer > p:first-child {
     float     : left;
     max-width : 50%;
   }
@@ -493,9 +493,55 @@ article .personnages {
     background-image    : url('/favicon.ico');
     background-position : 2px 50%;
   }
+  .sources {
+    clear     : both;
+    margin-top: 0.625em;
+    text-align: right;
+  }
+    .sources p {
+      display       : inline-block;
+      vertical-align: top;
+    }
+      .sources a:not(.active) span {
+        display : inline-block;
+        overflow: hidden;
+        height  : 0;
+        width   : 0;
+      }
+      .sources a.active {
+        text-decoration : none;
+        cursor          : text;
+      }
+    #sources {
+      display           : inline-block;
+      vertical-align    : bottom;
+      overflow          : hidden;
+      margin            : 0 0 0 -4px;
+      max-width         : 0;
+      max-height        : 1.25em;
+      -moz-transition   : max-width 0.4s, opacity 0.4s, max-height 0.4s 0.4s;
+      -webkit-transition: width 0.4s, opacity 0.4s;
+      -o-transition     : width 0.4s, opacity 0.4s;
+      -ms-transition    : width 0.4s, opacity 0.4s;
+      transition        : width 0.4s, opacity 0.4s;
+      opacity           : 0;
+    }
+      #sources li {
+        display   : inline;
+        list-style: none;
+      }
+    #sources.active {
+      margin    : 0;
+      max-width : 50%;
+      max-height: 100%;
+      opacity   : 1;
+    }
   .showcomments {
-    clear             : both;
-    margin-top        : 1.25em;
+    clear     : both;
+    margin-top: 1.25em;
+  }
+  .sources ~ .showcomments {
+    margin-top: 0.625em;
   }
     .showcomments a {
       display: block;

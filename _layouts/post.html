@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
@@ -58,6 +58,16 @@
         <span class="visuallyhidden">Sous contrat</span>
         <a class="creative-commons has-icon" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr" title="paternité, pas d’utilisation commerciale, partage à l’identique">Creative Commons</a>
       </p>
+      {% if page.sources %}
+      <div class="sources" aria-live="off">
+        <p><a href="#sources" onclick='this.className="active";document.getElementById("sources").className="active";return false;'>Sources<span>&nbsp;:</span></a></p>
+        <ul id="sources">
+          {% for source in page.sources %}
+          <li><a href="{{ source[1] }}">{{ source[0] }}</a>{% if forloop.last %}…{% else %},{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
       {% if page.comments %}
       <script>var disqus_shortname='benj-blog',disqus_identifier='{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',disqus_url='http://blog.menant-benjamin.fr{{ page.url }}',disqus_title='{{ page.title }}';</script>
       <p class="showcomments">
