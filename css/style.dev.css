@@ -282,6 +282,22 @@ body {
 #contenu > div {
   margin: 0 1.25em;
 }
+  #contenu abbr {
+    font-size     : 0.85em;
+    text-transform: uppercase;
+  }
+    #contenu abbr span:not(:last-child) {
+      margin-right: 0.2ex;
+    }
+    .typo-ph {
+      margin-left: 0.3ex;
+    }
+    .typo-go {
+      margin-right: 0.2ex;
+    }
+    .typo-gf {
+      margin-left: 0.2ex;
+    }
 
 /**
  * List of posts
@@ -574,7 +590,7 @@ article .personnages {
    * 3.2.1=comments
    */
   #commentaires {
-    min-height: 30em;
+    min-height: 10em;
   }
   .showcomments span {
     -moz-transition   : all 0.5s;
@@ -584,7 +600,7 @@ article .personnages {
     transition        : all 0.5s;
     opacity           : 0;
   }
-  .ie7 .showcomments span{
+  .ie7 .showcomments span {
     zoom: 1;
     filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
   }
