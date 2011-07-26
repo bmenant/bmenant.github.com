@@ -5,13 +5,14 @@
 
 (function ()
 {
-	var $all_p, $all_abbr, $c,
+	var $all_p, $all_abbr, $c, $f,
 			_d, _cl_quot_marks, _op_quot_marks, _punct_marks, _re_all_marks, _re_punct_marks, _re_op_quot_marks, _re_cl_quot_marks,
 			parseNodesRecursively;
 	// Get elements to fixe
 	$c        = document.getElementById('contenu'),
 	$all_p    = $c.getElementsByTagName('p'),
 	$all_abbr = $c.getElementsByTagName('abbr'),
+	$f				= document.getElementById('a-propos'),
 	_cl_quot_marks    = '\\)\\]\\}»›',
 	_op_quot_marks    = '‹«\\(\\[\\{',
 	_punct_marks      = '!?;:',
@@ -91,16 +92,20 @@
 	};
 
 	// Fixe content's paragraphes…
-	for (var $p, _html, _i = 0; _i < $all_p.length; _i++)
+	for (var $p, _i = 0; _i < $all_p.length; _i++)
 	{
 		$p = $all_p[_i];
 
 		if ($p.parentNode === $c.firstChild)
 		{
-			_html = parseNodesRecursively($p);
-			$p.innerHTML = _html;
+			$p.innerHTML = parseNodesRecursively($p);
 		}
 	}
+
+	// Fixe main footer's text…
+	$f.innerHTML = parseNodesRecursively($f);
+
+
 
 	// Add thin unbreakable spaces between dots and letters into abbreviations
 	for (var $abbr, _text, _i = 0; _i < $all_abbr.length; _i++)
