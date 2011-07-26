@@ -455,17 +455,22 @@ article .personnages {
     /**
      * Didascalies
      */
-    article i {
+    article i,
+    article figcaption {
       font-style: italic;
     }
-    article .didascalie {
+    article .didascalie,
+    article figure {
       margin: 1.875em 0;
     }
-    article .illustration {
+    article .illustration,
+    article figure {
       padding   : 0;
       text-align: center;
     }
-    article .illustration img {
+    article .illustration img,
+    article figure img,
+    article pre {
       display               : block;
       margin                : 0 auto 0.625em;
       max-height            : 550px;
@@ -477,6 +482,24 @@ article .personnages {
       -webkit-box-shadow    : inset 0 0 0 1px rgba(0,0,0,0.8), 0 0 0.313em #000;
       box-shadow            : inset 0 0 0 1px rgba(0,0,0,0.8), 0 0 0.313em #000;
     }
+    pre {
+      padding         : 0.625em 1.25em;
+      text-align      : left;
+      color           : #DDD;
+      background-color: #222;
+    }
+      code {
+        display     : block;
+        padding-left: 0.313em;
+        border-left : 0.313em solid #000;
+      }
+        code .lineno {
+          padding     : 0 0.313em;
+          margin-right : -0.313em;
+          font-weight : bold;
+          color       : #888;
+          background  : none repeat scroll 0 0 #000000;
+        }
 
   article footer {
     margin: 2.5em 0;
