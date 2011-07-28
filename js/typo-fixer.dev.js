@@ -15,7 +15,7 @@
   $f        = document.getElementById('a-propos'),
   _cl_quot_marks    = '\\)\\]\\}»›',
   _op_quot_marks    = '‹«\\(\\[\\{',
-  _punct_marks      = '!?;:',
+  _punct_marks      = '!?;:€$£',
   _token            = '<§>',
   _re_punct_marks   = new RegExp('([' + _punct_marks + '])', 'gm'),
   _re_cl_quot_marks = new RegExp('([' + _cl_quot_marks + '])', 'gm'),
