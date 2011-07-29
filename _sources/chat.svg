@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="sechas.svg"
+   sodipodi:docname="chat.svg"
    style="enable-background:new">
   <defs
      id="defs4">
@@ -53,24 +53,6 @@
          in2="BackgroundImage"
          id="feBlend3873" />
     </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3857"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.9"
-         id="feGaussianBlur3859" />
-    </filter>
-    <filter
-       color-interpolation-filters="sRGB"
-       inkscape:collect="always"
-       id="filter3857-1">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="0.9"
-         id="feGaussianBlur3859-5" />
-    </filter>
     <inkscape:path-effect
        effect="spiro"
        id="path-effect4124-8"
@@ -91,11 +73,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.23336394"
-     inkscape:cx="854.10808"
-     inkscape:cy="679.38366"
+     inkscape:zoom="0.86297033"
+     inkscape:cx="482.07962"
+     inkscape:cy="199.25958"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4791"
      showgrid="true"
      showborder="true"
      borderlayer="false"
@@ -131,7 +113,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -143,7 +125,8 @@
      style="display:inline">
     <g
        id="g5148"
-       transform="translate(-1933.6097,-25.900807)">
+       transform="translate(-1933.6097,-25.900807)"
+       style="fill-rule:evenodd;stroke:#222222;stroke-opacity:1">
       <path
          inkscape:export-ydpi="55.099998"
          inkscape:export-xdpi="55.099998"
@@ -152,7 +135,7 @@
          inkscape:connector-curvature="0"
          id="path3826"
          d="m 1978.6097,569.16382 180,140 c 34.1748,-7.57371 60.776,-9.25675 100,0 l 180,-140 -48.317,410.44842 c -100.6449,76.57856 -255.1474,77.42006 -360,0 z"
-         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:none" />
+         style="fill:none;stroke:#222222;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-mid:none;marker-end:none;fill-rule:evenodd" />
       <path
          inkscape:export-ydpi="55.099998"
          inkscape:export-xdpi="55.099998"
@@ -161,21 +144,22 @@
          inkscape:connector-curvature="0"
          id="path4433"
          d="m 2158.6097,915.16576 100,0 0,0 -50,0 c 0,25.9987 0,51.9974 0,77.9961 l 0,-77.9961 z"
-         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         style="fill:none;stroke:#222222;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-rule:evenodd" />
       <g
          inkscape:export-ydpi="55.099998"
          inkscape:export-xdpi="55.099998"
          inkscape:export-filename="/home/bmenant/Sites/blog/chat_300.png"
          transform="translate(1951.6656,-3.8643798)"
-         id="g4787">
+         id="g4787"
+         style="fill-rule:evenodd;stroke:#222222;stroke-opacity:1">
         <path
-           style="fill:#000000;fill-opacity:1;stroke:none"
+           style="fill:#222222;fill-opacity:1;stroke:#222222;fill-rule:evenodd;stroke-opacity:1"
            d="m 166.94414,759.10087 c -22.21388,0 -41.59633,12.05873 -51.96875,30 l 103.9375,0 c -10.37242,-17.94127 -29.75487,-30 -51.96875,-30 z m -60,60 c 0,33.13708 26.86291,60 60,60 33.13709,0 60,-26.86292 60,-60 l -120,0 z"
            id="path4566-3"
            inkscape:connector-curvature="0" />
         <path
            sodipodi:type="arc"
-           style="fill:none;stroke:#000000;stroke-width:29.24987984;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:none;stroke:#222222;stroke-width:29.24987983999999841;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-rule:evenodd"
            id="path4566-8-0"
            sodipodi:cx="-345"
            sodipodi:cy="595"
@@ -189,15 +173,16 @@
          inkscape:export-xdpi="55.099998"
          inkscape:export-filename="/home/bmenant/Sites/blog/chat_300.png"
          transform="translate(1982.4871,7.2569104)"
-         id="g4791">
+         id="g4791"
+         style="fill-rule:evenodd;stroke:#222222;stroke-opacity:1">
         <path
-           style="fill:#000000;fill-opacity:1;stroke:none"
+           style="fill:#222222;fill-opacity:1;stroke:#222222;fill-rule:evenodd;stroke-opacity:1"
            d="m 316.1226,747.97959 c -22.21388,0 -41.59633,12.05873 -51.96875,30 l 103.9375,0 c -10.37242,-17.94127 -29.75487,-30 -51.96875,-30 z m -60,60 c 0,33.13708 26.86291,60 60,60 33.13709,0 60,-26.86292 60,-60 l -120,0 z"
            id="path4566-3-3"
            inkscape:connector-curvature="0" />
         <path
            sodipodi:type="arc"
-           style="fill:none;stroke:#000000;stroke-width:29.24987984;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+           style="fill:none;stroke:#222222;stroke-width:29.24987983999999841;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;fill-rule:evenodd"
            id="path4566-8-0-9"
            sodipodi:cx="-345"
            sodipodi:cy="595"

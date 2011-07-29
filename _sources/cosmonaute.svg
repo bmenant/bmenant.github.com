@@ -76,11 +76,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.23336394"
-     inkscape:cx="90.487663"
-     inkscape:cy="633.37964"
+     inkscape:zoom="0.70009182"
+     inkscape:cx="-44.279906"
+     inkscape:cy="218.54276"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="g5106"
      showgrid="true"
      showborder="true"
      borderlayer="false"
@@ -120,7 +120,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -152,7 +152,7 @@
          inkscape:connector-curvature="0"
          id="rect5035"
          d="M 14.999999,251.47281 C 14.999999,11.472803 445,9.4371934 445,251.47281 l 0,220 -430.000001,0 z"
-         style="fill:none;stroke:#000000;stroke-width:29.99999809;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+         style="fill:none;stroke:#222222;stroke-width:29.99999808999999829;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
       <path
          inkscape:export-ydpi="5.8699999"
          inkscape:export-xdpi="5.8699999"
@@ -160,7 +160,7 @@
          inkscape:connector-curvature="0"
          id="rect5044"
          d="m 9.999999,211.09073 0,120 299.656201,0 -32.1562,-120 -267.500001,0 z m 298.531201,0 32.1563,120 109.3125,0 0,-120 -141.4688,0 z"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="fill:#222222;fill-opacity:1;stroke:none;stroke-opacity:1" />
       <rect
          inkscape:export-ydpi="5.8699999"
          inkscape:export-xdpi="5.8699999"
@@ -173,7 +173,7 @@
          height="30"
          width="150"
          id="rect5062"
-         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#222222;stroke-opacity:1" />
       <path
          inkscape:export-ydpi="5.8699999"
          inkscape:export-xdpi="5.8699999"
@@ -181,7 +181,7 @@
          inkscape:connector-curvature="0"
          id="rect5064"
          d="m 138.5313,128.40323 c -3.8343,0 -7.6557,1.46822 -10.5937,4.40625 -5.8761,5.87606 -5.8761,15.34269 0,21.21875 l 7.0624,7.0625 -7.0624,7.0625 c -5.8761,5.87606 -5.8761,15.34269 0,21.21875 5.876,5.87605 15.3426,5.87605 21.2187,0 l 7.0625,-7.0625 7.0625,7.0625 c 5.8761,5.87605 15.3427,5.87605 21.2187,0 5.8761,-5.87606 5.8761,-15.34269 0,-21.21875 l -7.0624,-7.0625 7.0624,-7.0625 c 5.8761,-5.87606 5.8761,-15.34269 0,-21.21875 -5.876,-5.87606 -15.3426,-5.87606 -21.2187,0 l -7.0625,7.0625 -7.0625,-7.0625 c -2.938,-2.93803 -6.7907,-4.40625 -10.625,-4.40625 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" />
+         style="fill:#222222;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-opacity:1" />
       <path
          inkscape:export-ydpi="5.8699999"
          inkscape:export-xdpi="5.8699999"
@@ -190,7 +190,7 @@
          inkscape:connector-curvature="0"
          id="path5085"
          d="m 389,-13.909277 c -24.6752,0 -45,20.3248507 -45,45 0,19.42543 12.601,36.13585 30,42.375 l 0,52.625007 30,0 0,-52.625007 c 17.3989,-6.23915 30,-22.94957 30,-42.375 0,-24.6751493 -20.3249,-45 -45,-45 z m 0,30 c 8.4619,0 15,6.53806 15,15 0,8.46194 -6.5381,15 -15,15 -8.462,0 -15,-6.53806 -15,-15 0,-8.46194 6.538,-15 15,-15 z"
-         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#000000;fill-opacity:1;stroke:none;stroke-width:35.00000381;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;color:#000000;fill:#222222;fill-opacity:1;stroke:none;stroke-width:35.00000381000000260;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" />
     </g>
   </g>
   <g

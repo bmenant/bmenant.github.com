@@ -15,7 +15,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   sodipodi:docname="sechas.svg"
+   sodipodi:docname="robot.svg"
    style="enable-background:new">
   <defs
      id="defs4">
@@ -91,11 +91,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.23336394"
-     inkscape:cx="854.10808"
-     inkscape:cy="679.38366"
+     inkscape:zoom="1"
+     inkscape:cx="162.75021"
+     inkscape:cy="290.72159"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g5134"
      showgrid="true"
      showborder="true"
      borderlayer="false"
@@ -118,7 +118,7 @@
        id="grid5158"
        empspacing="5"
        visible="true"
-       enabled="true"
+       enabled="false"
        snapvisiblegridlinesonly="true"
        spacingx="600px"
        spacingy="600px" />
@@ -131,7 +131,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -170,23 +170,16 @@
          height="30"
          width="90"
          id="rect3853"
-         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+         style="fill:none;stroke:#222222;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <g
          inkscape:export-ydpi="53.529999"
          inkscape:export-xdpi="53.529999"
          inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
          transform="matrix(-1,0,0,-1,1185.2357,1816.4275)"
-         id="g3862">
-        <rect
-           style="fill:none;stroke:#000000;stroke-width:31.44000053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3857)"
-           id="rect3781-3"
-           width="90"
-           height="90"
-           x="-320"
-           y="1550"
-           transform="matrix(0.95419847,0,0,0.95419847,-13.969468,71.679386)" />
+         id="g3862"
+         style="fill:#222222;fill-opacity:1">
         <path
-           style="fill:#000000;fill-opacity:1;stroke:none"
+           style="fill:#222222;fill-opacity:1;stroke:none"
            d="m -306.37405,1563.6259 0,60 60,-60 z"
            id="path3855"
            inkscape:connector-curvature="0" />
@@ -196,17 +189,10 @@
          inkscape:export-xdpi="53.529999"
          inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
          transform="matrix(-1,0,0,-1,1558.6708,1885.7405)"
-         id="g3898">
-        <rect
-           style="fill:none;stroke:#000000;stroke-width:31.44000053;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3857-1)"
-           id="rect3781-3-3"
-           width="90"
-           height="90"
-           x="-320"
-           y="1550"
-           transform="matrix(0.95419847,0,0,0.95419847,179.46565,140.99237)" />
+         id="g3898"
+         style="fill:#222222;fill-opacity:1;stroke:none;stroke-opacity:1">
         <path
-           style="fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3871)"
+           style="fill:#222222;fill-opacity:1;stroke:none;filter:url(#filter3871);stroke-opacity:1"
            d="m -112.93893,1632.9389 0,60 60,-60 z"
            id="path3855-9"
            inkscape:connector-curvature="0" />
@@ -220,20 +206,7 @@
          height="360"
          width="414.375"
          id="rect3916"
-         style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <path
-         inkscape:export-ydpi="53.529999"
-         inkscape:export-xdpi="53.529999"
-         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
-         transform="matrix(0.74999998,0,0,0.74999998,2526.6097,350.30163)"
-         d="m -1280,-440 c 0,11.04569 -8.9543,20 -20,20 -11.0457,0 -20,-8.95431 -20,-20 0,-11.04569 8.9543,-20 20,-20 11.0457,0 20,8.95431 20,20 z"
-         sodipodi:ry="20"
-         sodipodi:rx="20"
-         sodipodi:cy="-440"
-         sodipodi:cx="-1300"
-         id="path4210"
-         style="fill:none;stroke:#000000;stroke-width:40.00000381;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
+         style="fill:none;stroke:#222222;stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
       <rect
          inkscape:export-ydpi="53.529999"
          inkscape:export-xdpi="53.529999"
@@ -243,7 +216,7 @@
          height="60"
          width="30"
          id="rect4458"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="fill:#222222;fill-opacity:1;stroke:none" />
       <rect
          inkscape:export-ydpi="53.529999"
          inkscape:export-xdpi="53.529999"
@@ -253,17 +226,26 @@
          height="60"
          width="30"
          id="rect4482"
-         style="fill:#000000;fill-opacity:1;stroke:none" />
+         style="fill:#222222;fill-opacity:1;stroke:none" />
+      <path
+         style="fill:#222222;fill-opacity:1;fill-rule:evenodd;stroke:none"
+         d="m 1551.6097,-16.854609 c -19.33,0 -35,15.670034 -35,35 0,13.967504 8.1677,26.041803 20,31.65625 l 0,44.59375 30,0 0,-44.59375 c 11.8323,-5.614447 20,-17.688746 20,-31.65625 0,-19.329966 -15.67,-35 -35,-35 z"
+         id="path3792"
+         inkscape:connector-curvature="0" />
       <rect
-         inkscape:export-ydpi="53.529999"
-         inkscape:export-xdpi="53.529999"
-         inkscape:export-filename="/home/bmenant/Sites/blog/robot.png"
-         y="40.989136"
-         x="1536.6097"
-         height="60"
-         width="30"
-         id="rect4482-0"
-         style="fill:#000000;fill-opacity:1;stroke:none;display:inline;filter:url(#filter3871);enable-background:new" />
+         style="opacity:1;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#222222;stroke-opacity:1;stroke-width:30;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round"
+         id="rect3799"
+         width="90"
+         height="90"
+         x="1416.6097"
+         y="177.80161" />
+      <rect
+         style="fill:none;stroke:#222222;stroke-width:30;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3871);enable-background:new"
+         id="rect3799-1"
+         width="90"
+         height="90"
+         x="1596.6097"
+         y="177.80161" />
     </g>
   </g>
 </svg>

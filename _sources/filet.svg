@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="520"
-   height="520"
+   width="240"
+   height="240"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
-   inkscape:export-filename="/mnt/serveur/home/sites/perso/blog-github/assets/filet_20x20.png"
-   inkscape:export-xdpi="3.46"
-   inkscape:export-ydpi="3.46"
-   sodipodi:docname="Nouveau document 1">
+   inkscape:export-filename="/mnt/serveur/home/sites/perso/blog-github/assets/filet_24x24.png"
+   inkscape:export-xdpi="9"
+   inkscape:export-ydpi="9"
+   sodipodi:docname="filet.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -28,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.3775"
-     inkscape:cx="-140"
-     inkscape:cy="210.00001"
+     inkscape:cx="-673.77483"
+     inkscape:cy="210.00008"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -42,8 +42,9 @@
      inkscape:window-maximized="1"
      fit-margin-top="10"
      fit-margin-left="10"
-     fit-margin-right="201"
-     fit-margin-bottom="10">
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     width="624px">
     <inkscape:grid
        type="xygrid"
        id="grid3753"
@@ -69,15 +70,24 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(10,-542.36218)">
+     transform="translate(10,-822.36224)">
     <rect
-       style="fill:#000000;fill-opacity:1;stroke:none"
+       style="fill:#222222;fill-opacity:1;stroke:none"
        id="rect3755"
-       width="309"
-       height="500"
-       x="-7.3015691e-08"
-       y="552.36218"
-       ry="100"
-       rx="100" />
+       width="69.933777"
+       height="220"
+       x="0"
+       y="832.36224"
+       ry="18.21192"
+       rx="18.21192" />
+    <rect
+       style="fill:#222222;fill-opacity:1;stroke:none"
+       id="rect3755-8"
+       width="69.933777"
+       height="220"
+       x="113.64239"
+       y="832.36224"
+       ry="36.42384"
+       rx="36.42384" />
   </g>
 </svg>
