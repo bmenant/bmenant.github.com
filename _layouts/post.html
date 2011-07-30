@@ -60,7 +60,7 @@
       </p>
       {% if page.sources %}
       <div class="sources" aria-live="off">
-        <p><a href="#sources" onclick='this.className="active";document.getElementById("sources").className="active";return false;'>Sources<span class="typo-ph">:</span></a></p>
+        <p onclick='this.className="active";document.getElementById("sources").className="active";'>Sources<span class="typo-ph">:</span></p>
         <ul id="sources">
           {% for source in page.sources %}
           <li><a href="{{ source[1] }}">{{ source[0] }}</a>{% if forloop.last %}…{% else %},{% endif %}</li>
@@ -71,7 +71,7 @@
       {% if page.comments %}
       <script>var disqus_shortname='benj-blog',disqus_identifier='{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',disqus_url='http://blog.menant-benjamin.fr{{ page.url }}',disqus_title='{{ page.title }}';</script>
       <p class="showcomments">
-        <a href="#commentaires" id="showcomments" title="Le dialogue continue…" onclick='document.getElementById("commentaires").className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";this.parentNode.className+=" active";' >
+        <a href="#commentaires" id="showcomments" title="Le dialogue continue…" onclick='this.className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";this.parentNode.className+=" active";' >
           <span>Afficher<span class="visuallyhidden"> les</span></span> commentaires
         </a>
       </p>

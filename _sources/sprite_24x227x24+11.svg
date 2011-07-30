@@ -126,16 +126,6 @@
        is_visible="true"
        id="path-effect4124-8-1"
        effect="spiro" />
-    <filter
-       color-interpolation-filters="sRGB"
-       id="filter3871-1"
-       inkscape:collect="always">
-      <feBlend
-         id="feBlend3873-0"
-         in2="BackgroundImage"
-         mode="screen"
-         inkscape:collect="always" />
-    </filter>
     <inkscape:path-effect
        is_visible="true"
        id="path-effect4096-1"
@@ -270,11 +260,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="66.566965"
-     inkscape:cy="118.56149"
+     inkscape:zoom="1.2689732"
+     inkscape:cx="-30.78329"
+     inkscape:cy="-32.848864"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g2998"
      showgrid="false"
      inkscape:showpageshadow="false"
      inkscape:window-width="1600"
@@ -301,7 +291,7 @@
      transform="translate(0,-825.3622)"
      style="filter:url(#filter5408)">
     <g
-       transform="matrix(0.32258064,0,0,0.32258064,1.9999999,909.7171)"
+       transform="matrix(0.3548387,0,0,0.3548387,1.0000001,908.65251)"
        id="g2998">
       <path
          sodipodi:type="arc"
@@ -324,11 +314,11 @@
            d="m 2,8.528 c 0,-7.86 10.482,-7.861 10.482,0 0,10.482 0,37.093 0,47.576 C 12.482,63.965 2,63.965 2,56.104 2,45.621 2,8.528 2,8.528 z"
            id="path13"
            inkscape:connector-curvature="0"
-           style="fill:#0000ff" />
+           style="fill:#0000ff;stroke:#0000ff;stroke-opacity:1;stroke-width:0.28181819;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
     </g>
     <g
-       transform="matrix(0.31250488,0,0,0.31250488,0.28122325,863.45603)"
+       transform="matrix(0.34375537,0,0,0.34375537,-0.8906545,862.56533)"
        id="g4">
       <circle
          d="M 66.621,28.500999 C 66.621,44.426683 53.710683,57.337 37.785,57.337 21.859317,57.337 8.9489994,44.426683 8.9489994,28.500999 c 0,-15.925683 12.9103176,-28.83599999 28.8360006,-28.83599999 15.925683,0 28.836,12.91031699 28.836,28.83599999 z"
@@ -350,7 +340,7 @@
     <g
        style="enable-background:new"
        id="g4205"
-       transform="matrix(0.04014465,0,0,0.04014465,0.96022121,957.32248)">
+       transform="matrix(0.04415912,0,0,0.04415912,-0.143758,956.21842)">
       <g
          style="display:inline"
          transform="translate(0,-502.36218)"
@@ -444,7 +434,7 @@
     <g
        style="enable-background:new"
        id="g4313"
-       transform="matrix(0.03996946,0,0,0.03996946,1.0083985,981.37066)">
+       transform="matrix(0.0439664,0,0,0.0439664,-0.09075998,980.27142)">
       <g
          style="display:inline"
          transform="translate(-48,-456.35811)"
@@ -518,30 +508,7 @@
          id="layer3-8" />
     </g>
     <g
-       transform="matrix(0.09090909,0,0,0.09090909,2,954.69297)"
-       id="layer1-2"
-       inkscape:label="Calque 1">
-      <rect
-         rx="18.21192"
-         ry="18.21192"
-         y="832.36224"
-         x="0"
-         height="220"
-         width="69.933777"
-         id="rect3755"
-         style="fill:#222222;fill-opacity:1;stroke:none" />
-      <rect
-         rx="36.42384"
-         ry="36.42384"
-         y="832.36224"
-         x="113.64239"
-         height="220"
-         width="69.933777"
-         id="rect3755-8"
-         style="fill:#222222;fill-opacity:1;stroke:none" />
-    </g>
-    <g
-       transform="matrix(0.04,0,0,0.04,2,805.26778)"
+       transform="matrix(0.044,0,0,0.044,1,802.05825)"
        id="layer1-55"
        inkscape:label="Calque 1">
       <path
@@ -569,7 +536,7 @@
     </g>
     <g
        id="g4481"
-       transform="matrix(0.05284672,0,0,0.05284672,1.4821023,887.09796)">
+       transform="matrix(0.05813139,0,0,0.05813139,0.4303129,886.17145)">
       <path
          style="fill:#9cdaf1"
          inkscape:connector-curvature="0"
@@ -639,7 +606,7 @@
     <g
        style="enable-background:new"
        id="g4755"
-       transform="matrix(0.04039273,0,0,0.04039273,0.89199922,933.25426)">
+       transform="matrix(0.04443201,0,0,0.04443201,-0.21880274,932.14338)">
       <g
          style="display:inline"
          transform="translate(0,-502.36218)"
@@ -967,7 +934,7 @@
     <g
        style="enable-background:new"
        id="g5589"
-       transform="matrix(0.03934307,0,0,0.03934307,1.1806541,1005.6959)">
+       transform="matrix(0.04324404,0,0,0.04324404,0.10788721,1004.6248)">
       <g
          style="display:inline"
          transform="translate(0,-502.36218)"
@@ -1077,6 +1044,29 @@
              style="fill:none;stroke:#222222;stroke-width:30;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;filter:url(#filter3871-0);enable-background:new" />
         </g>
       </g>
+    </g>
+    <g
+       transform="matrix(0.1,0,0,0.1,2,946.12596)"
+       id="layer1-34"
+       inkscape:label="Calque 1">
+      <rect
+         rx="20"
+         ry="20"
+         y="832.36224"
+         x="0"
+         height="220"
+         width="70"
+         id="rect3755"
+         style="fill:#222222;fill-opacity:1;stroke:none" />
+      <rect
+         rx="36"
+         ry="36"
+         y="832.36224"
+         x="120"
+         height="220"
+         width="70"
+         id="rect3755-8"
+         style="fill:#222222;fill-opacity:1;stroke:none" />
     </g>
   </g>
 </svg>
