@@ -5,115 +5,118 @@
 
 (function ()
 {
-  var $all_p, $all_abbr, $c, $f,
-      _d, _cl_quot_marks, _op_quot_marks, _punct_marks, _re_all_marks, _re_punct_marks, _re_op_quot_marks, _re_cl_quot_marks,
-      parseNodesRecursively;
-  // Get elements to fixe
-  $c        = document.getElementById('contenu'),
-  $all_p    = $c.getElementsByTagName('p'),
-  $all_abbr = $c.getElementsByTagName('abbr'),
-  $f        = document.getElementById('a-propos'),
-  _cl_quot_marks    = '\\)\\]\\}»›',
-  _op_quot_marks    = '‹«\\(\\[\\{',
-  _punct_marks      = '!?;:',
-  _token            = '<§>',
-  _re_punct_marks   = new RegExp('([' + _punct_marks + '])', 'gm'),
-  _re_cl_quot_marks = new RegExp('([' + _cl_quot_marks + '])', 'gm'),
-  _re_op_quot_marks = new RegExp('([' + _op_quot_marks + '])', 'gm'),
-  _re_all_marks     = new RegExp('([' + _punct_marks + _op_quot_marks + _cl_quot_marks + '])', 'gm'),
-  parseNodesRecursively = function ($parent)
+  window.setTimeout(function ()
   {
-    var $newChildren = '';
-
-    for (var $child, $clone, $tmpElt, _split_text, _i = 0; _i < $parent.childNodes.length; _i++)
+    var $all_p, $all_abbr, $c, $f,
+        _d, _cl_quot_marks, _op_quot_marks, _punct_marks, _re_all_marks, _re_punct_marks, _re_op_quot_marks, _re_cl_quot_marks,
+        parseNodesRecursively;
+    // Get elements to fixe
+    $c        = document.getElementById('contenu'),
+    $all_p    = $c.getElementsByTagName('p'),
+    $all_abbr = $c.getElementsByTagName('abbr'),
+    $f        = document.getElementById('a-propos'),
+    _cl_quot_marks    = '\\)\\]\\}»›',
+    _op_quot_marks    = '‹«\\(\\[\\{',
+    _punct_marks      = '!?;:€$',
+    _token            = '<§>',
+    _re_punct_marks   = new RegExp('([' + _punct_marks + '])', 'gm'),
+    _re_cl_quot_marks = new RegExp('([' + _cl_quot_marks + '])', 'gm'),
+    _re_op_quot_marks = new RegExp('([' + _op_quot_marks + '])', 'gm'),
+    _re_all_marks     = new RegExp('([' + _punct_marks + _op_quot_marks + _cl_quot_marks + '])', 'gm'),
+    parseNodesRecursively = function ($parent)
     {
-      $child = $parent.childNodes[_i];
+      var $newChildren = '';
 
-      // Check a text node
-      if ($child.nodeType === $child.TEXT_NODE)
+      for (var $child, $clone, $tmpElt, _split_text, _i = 0; _i < $parent.childNodes.length; _i++)
       {
-        _split_text = $child.nodeValue
-                    // Isolate quotation and tall punctuation marks
-                    . replace(_re_all_marks, _token + '$1' + _token)
-                    . split(_token);
+        $child = $parent.childNodes[_i];
 
-        // Process each text node's portion
-        for (var _text, _class, _html, _j = 0; _j < _split_text.length; _j++)
+        // Check a text node
+        if ($child.nodeType === $child.TEXT_NODE)
         {
-          _text = _split_text[_j];
+          _split_text = $child.nodeValue
+                      // Isolate quotation and tall punctuation marks
+                      . replace(_re_all_marks, _token + '$1' + _token)
+                      . split(_token);
 
-          // Search for quotation or tall punctuation marks
-          if (_re_punct_marks.test(_text) === true)
+          // Process each text node's portion
+          for (var _text, _class, _html, _j = 0; _j < _split_text.length; _j++)
           {
-            _class = 'typo-ph';
-          }
-          else if (_re_op_quot_marks.test(_text) === true)
-          {
-            _class = 'typo-go';
-          }
-          else if (_re_cl_quot_marks.test(_text) === true)
-          {
-            _class = 'typo-gf';
-          }
-          else
-          {
-            _class = null;
-          }
+            _text = _split_text[_j];
 
-          // Add markups for quotation or tall punctuation marks
-          _html = _class
-                ? '<span class="' + _class + '">' + _text + '</span>'
-                : _text;
+            // Search for quotation or tall punctuation marks
+            if (_re_punct_marks.test(_text) === true)
+            {
+              _class = 'typo-ph';
+            }
+            else if (_re_op_quot_marks.test(_text) === true)
+            {
+              _class = 'typo-go';
+            }
+            else if (_re_cl_quot_marks.test(_text) === true)
+            {
+              _class = 'typo-gf';
+            }
+            else
+            {
+              _class = null;
+            }
+
+            // Add markups for quotation or tall punctuation marks
+            _html = _class
+                  ? '<span class="' + _class + '">' + _text + '</span>'
+                  : _text;
+
+            // Concat HTML string node to others
+            $newChildren += _html;
+          }
+        }
+        else
+        {
+          // Clone element
+          $clone  = $child.cloneNode(false),
+          $tmpElt = document.createElement('div');
+          $tmpElt.appendChild($clone);
+
+          // Parse children (recursivity)
+          if ($child.hasChildNodes() === true)
+          {
+            $clone.innerHTML = parseNodesRecursively($child);
+          }
 
           // Concat HTML string node to others
-          $newChildren += _html;
+          $newChildren += $tmpElt.innerHTML,
+          $tmpElt = $clone = null;
         }
       }
-      else
-      {
-        // Clone element
-        $clone  = $child.cloneNode(false),
-        $tmpElt = document.createElement('div');
-        $tmpElt.appendChild($clone);
 
-        // Parse children (recursivity)
-        if ($child.hasChildNodes() === true)
-        {
-          $clone.innerHTML = parseNodesRecursively($child);
-        }
+      return $newChildren;
+    };
 
-        // Concat HTML string node to others
-        $newChildren += $tmpElt.innerHTML,
-        $tmpElt = $clone = null;
-      }
-    }
-
-    return $newChildren;
-  };
-
-  // Fixe content's paragraphes…
-  for (var $p, _i = 0; _i < $all_p.length; _i++)
-  {
-    $p = $all_p[_i];
-
-    if ($p.parentNode === $c.firstChild)
+    // Fixe content's paragraphes…
+    for (var $p, _i = 0; _i < $all_p.length; _i++)
     {
-      $p.innerHTML = parseNodesRecursively($p);
+      $p = $all_p[_i];
+
+      if ($p.parentNode === $c.firstChild)
+      {
+        $p.innerHTML = parseNodesRecursively($p);
+      }
     }
-  }
 
-  // Fixe main footer's text…
-  $f.innerHTML = parseNodesRecursively($f);
-
+    // Fixe main footer's text…
+    $f.innerHTML = parseNodesRecursively($f);
 
 
-  // Add thin unbreakable spaces between dots and letters into abbreviations
-  for (var $abbr, _text, _i = 0; _i < $all_abbr.length; _i++)
-  {
-    $abbr = $all_abbr[_i],
-    _text = $abbr.innerHTML
-          . replace(/\./g, '<span>.</span>');
 
-    $abbr.innerHTML = _text;
-  }
+    // Add thin unbreakable spaces between dots and letters into abbreviations
+    for (var $abbr, _text, _i = 0; _i < $all_abbr.length; _i++)
+    {
+      $abbr = $all_abbr[_i],
+      _text = $abbr.innerHTML
+            . replace(/\./g, '<span>.</span>');
+
+      $abbr.innerHTML = _text;
+    }
+  }, 15);
 })();

@@ -20,7 +20,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="stylesheet" href="/css/style.dev.css" />
 
   <script src="/js/libs/modernizr-1.7.min.js"></script>
 </head>
@@ -60,18 +60,18 @@
       </p>
       {% if page.sources %}
       <div class="sources" aria-live="off">
-        <p onclick='this.className="active";document.getElementById("sources").className="active";'>Sources<span class="typo-ph">:</span></p>
+        <p id="show-sources">Sources<span class="typo-ph">:</span></p>
         <ul id="sources">
           {% for source in page.sources %}
-          <li><a href="{{ source[1] }}">{{ source[0] }}</a>{% if forloop.last %}…{% else %},{% endif %}</li>
+          <li><a href="{{ source[1] }}">{{ source[0] }}</a>{% if forloop.last %}…{% else %}<span class="typo-ph">;</span>{% endif %}</li>
           {% endfor %}
         </ul>
       </div>
       {% endif %}
       {% if page.comments %}
-      <script>var disqus_shortname='benj-blog',disqus_identifier='{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',disqus_url='http://blog.menant-benjamin.fr{{ page.url }}',disqus_title='{{ page.title }}';</script>
+      <script>var disqus_shortname='benj-blog',disqus_identifier='{{ page.permalink | remove_first: '/' | replace: '/', '-' }}',disqus_url='http://blog.menant-benjamin.fr{{ page.url }}',disqus_title="{{ page.title }}";</script>
       <p class="showcomments">
-        <a href="#commentaires" id="showcomments" title="Le dialogue continue…" onclick='this.className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";this.parentNode.className+=" active";' >
+        <a href="#commentaires" id="showcomments" title="Le dialogue continue…">
           <span>Afficher<span class="visuallyhidden"> les</span></span> commentaires
         </a>
       </p>
@@ -81,7 +81,7 @@
     <section id ="commentaires" aria-live="polite">
       <div class="visuallyhidden">
         <h1>Commentaires</h1>
-        <a href="#disqus_thread" onclick='document.getElementById("commentaires").className="active";document.getElementById("disqus_script").src="http://" + disqus_shortname + ".disqus.com/embed.js";document.getElementById("showcomments").parentNode.className+=" active";' >Afficher les commentaires</a>
+        <a id="showcomments-bis" href="#disqus_thread">Afficher les commentaires</a>
       </div>
       <div id="disqus_thread"></div><script id="disqus_script"></script>
       <noscript>Activez JavaScript pour lire les <a href="http://disqus.com/?ref_noscript">commentaires recueillis par DISQUS.</a></noscript>
