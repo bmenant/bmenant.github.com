@@ -46,7 +46,7 @@
         $comments           = document.getElementById('commentaires'),
         $disqus_script      = document.getElementById('disqus_script'),
         show_comments,
-        _location_hash = document.location.hash;
+        check_hash;
 
     // Footer
     exit_a_propos = function ()
@@ -87,23 +87,34 @@
 
 
     /**
-     * Do some stuff at page landing, for usability
+     * Do some stuff for usability
      */
+    check_hash = function ()
+    {
+      var _location_hash = document.location.hash;
 
-    // Footer
-    if (_location_hash === '#a-propos')
+      // Footer
+      if (_location_hash === '#a-propos')
+      {
+        goto_a_propos();
+      }
+      // Sources
+      else if (_location_hash === '#sources')
+      {
+        show_sources();
+      }
+      // Comments
+      else if (_location_hash.substr(1, 7) === 'comment')
+      {
+        show_comments();
+      }
+    };
+    // Do it at loading
+    check_hash();
+    // Redo it anytime the URL changes
+    if (window.Modernizr.hashchange == true)
     {
-      goto_a_propos();
-    }
-    // Sources
-    else if (_location_hash === '#sources')
-    {
-      show_sources();
-    }
-    // Comments
-    else  if (_location_hash.substr(1, 7) === 'comment')
-    {
-      show_comments();
+      Evt.add(window, 'hashchange', check_hash);
     }
 
   }, 15);
