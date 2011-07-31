@@ -39,7 +39,7 @@
         goto_a_propos,
         $show_sources = document.getElementById('show-sources'),
         $sources      = document.getElementById('sources'),
-        $a_sources    = $sources.getElementsByTagName('a'),
+        $a_sources    = !$sources || $sources.getElementsByTagName('a'),
         show_sources,
         $show_comments      = document.getElementById('showcomments'),
         $show_comments_bis  = document.getElementById('showcomments-bis'),
