@@ -1,0 +1,12 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Ponctuation haute", 
+  "value": [
+    "<span class=\"typo-ph\">[[%ask:Signe de ponctuation ?:;]]</span>!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "icon": "chrome://famfamfamsilk/skin/icons/add.png"
+}

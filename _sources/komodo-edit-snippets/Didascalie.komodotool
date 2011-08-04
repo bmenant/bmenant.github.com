@@ -1,0 +1,13 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Didascalie", 
+  "value": [
+    "<p class=\"didascalie\"><i>Petite didascalie.</i></p>", 
+    "!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "icon": "chrome://famfamfamsilk/skin/icons/add.png"
+}

@@ -1,0 +1,16 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Robot", 
+  "value": [
+    "", 
+    "<p><b class=\"le-robot\">Le Robot</b> &mdash;", 
+    "\tR\u00e9plique du Robot.", 
+    "</p>", 
+    "!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "icon": "chrome://famfamfamsilk/skin/icons/add.png"
+}

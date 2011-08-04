@@ -1,0 +1,12 @@
+{
+  "keyboard_shortcut": "", 
+  "name": "Ponctuation embrassante", 
+  "value": [
+    "<span class=\"typo-go\">[[%ask:Signe d\u2019ouverture ?:\u00ab]]</span>[[%s]]<span class=\"typo-gf\">[[%ask:Signe de fermeture ?:\u00bb]]</span>!@#_currentPos!@#_anchor"
+  ], 
+  "set_selection": "false", 
+  "version": "1.0.7", 
+  "type": "snippet", 
+  "indent_relative": "false", 
+  "icon": "chrome://famfamfamsilk/skin/icons/add.png"
+}
