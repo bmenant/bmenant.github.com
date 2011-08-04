@@ -82,7 +82,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
 input, select { vertical-align: middle; }
 
-body { font:16px/1.5 BMVollkorn, Georgia, serif; *font-size:small; }
+body { font:16px/1.5 BMVollkorn, Georgia, serif;}
 select, input, textarea, button { font:99% sans-serif; }
 pre, code, kbd, samp { font-family: monospace, sans-serif; }
 
@@ -194,6 +194,10 @@ body {
     margin-bottom : 0.5em;
     padding-bottom: 0.75em;
   }
+  .ie7 #header li a,
+  .iem #header li a {
+    margin-bottom: 1.5em;
+  }
   .borderimage #header li a {
     padding-bottom: 0.25em;
     border-width  : 0;
@@ -261,10 +265,10 @@ body {
     content   : '';
   }
 
-    a.github {
+    a.github:before {
       background-position: 0 -60px;
     }
-    a.creative-commons {
+    a.creative-commons:before {
       background-position:  0 -36px;
     }
     /* Interface's mask */
@@ -323,7 +327,7 @@ body {
 #contenu > div {
   margin: 0 1.5em;
 }
-  #contenu abbr {
+  #contenu abbr.acronym {
     font-size     : 0.94em;
     text-transform: uppercase;
   }
@@ -372,8 +376,9 @@ section#contenu li {
     transition        : color 0.5s;
   }
   section#contenu li div {
-    float: right;
-    color: #fff;
+    float     : right;
+    max-width : 50%;
+    color     : #fff;
   }
   section#contenu li time {
     color: #CCC; color: rgba(0, 0, 0, 0.2);
@@ -400,6 +405,10 @@ section#contenu li {
     margin-right    : 0.375em;
     background-image: url('/assets/sprite_24x227x24+11.png');
   }
+  .ie7 section#contenu .iir,
+  .iem section#contenu .iir {
+    float: left;
+  }
 
 /**
  * Post's content
@@ -415,9 +424,6 @@ article p.argument {
   padding-bottom: 3em;
   font-style    : italic;
   background    : url('/assets/filet_24x24.png') 0 100% repeat-x;
-}
-article em {
-  font-style: italic;
 }
 article .personnages {
   margin    : 0 0 1.5em;
@@ -515,12 +521,17 @@ article .personnages {
      * Didascalies
      */
     article i,
-    article figcaption {
-      font-style: italic;
+    article figcaption,
+    article em {
+      font-style  : italic;
+      line-height : 1.25;
     }
     article .didascalie,
     article figure {
       margin: 2.25em 0 2em;
+    }
+    article i q {
+      font-style: normal;
     }
     article .illustration,
     article figure {
@@ -598,8 +609,7 @@ article .personnages {
   article footer address + p {
     text-align: right;
   }
-  article footer address .has-icon {
-    background-image    : url('/assets/sprite_24x227x24+11.png');
+  article footer address .has-icon:before {
     background-position : 0 -83px;
   }
   .sources {
@@ -619,6 +629,27 @@ article .personnages {
         height  : 0;
         width   : 0;
       }
+      .ie7 .sources p span,
+      .iem .sources p span {
+        display : inline;
+        zoom    : 1;
+        overflow: hidden;
+        height  : 0;
+        width   : 0;
+      }
+      .ie8 .sources p span {
+        display : inline-block;
+        overflow: hidden;
+        height  : 0;
+        width   : 0;
+      }
+      .ie7 .sources p.active span,
+      .iem .sources p.active span {
+        zoom: 0;
+      }
+      .ie8 .sources p.active span {
+        display: inline !important;
+      }
       .sources p.active {
         text-decoration : none;
         cursor          : text;
@@ -637,6 +668,10 @@ article .personnages {
       transition        : width 0.4s, opacity 0.4s;
       opacity           : 0;
     }
+    .ie7 #sources,
+    .iem #sources {
+      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    }
       #sources li {
         display   : inline;
         list-style: none;
@@ -646,6 +681,10 @@ article .personnages {
       max-width : 50%;
       max-height: 100%;
       opacity   : 1;
+    }
+    .ie7 #sources.active,
+    .iem #sources.active {
+      filter: none;
     }
   .showcomments {
     clear     : both;
@@ -718,15 +757,15 @@ article .personnages {
  * 4=common
  */
 
-a.has-icon {
-  padding-left      : 1.6em;
+.has-icon:before {
+  content           : '';
+  display           : inline-block;
+  vertical-align    : bottom;
+  width             : 1.6em;
+  height            : 1.5em;
+  background-color  : #fff;
   background-image  : url('/assets/sprite_24x227x24+11.png');
   background-repeat : no-repeat;
-}
-.ie7 a.has-icon,
-.iem a.has-icon {
-  background  : none;
-  padding-left: 0;
 }
 #footer,
 #header {
@@ -824,9 +863,12 @@ section#contenu .taupe {
 
 
 .ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
-.iir, article b { display: inline-block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; vertical-align: bottom; }
+.iir,
+article b { display: inline-block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; vertical-align: bottom; }
 .ie7 .iir,
-.iem .iir {
+.iem .iir,
+.ie7 article b,
+.iem article b {
   display : inline;
   zoom    : 1;
 }
