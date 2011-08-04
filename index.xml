@@ -25,7 +25,14 @@ layout: nil
       <name>Benjamin MENANT</name>
       <uri>http://menant-benjamin.fr/</uri>
     </author>
-    <content type="html">{{ post.content | xml_escape }}</content>
+    <content type="html">
+      {% if post.argument %}
+        &lt;p>&lt;i>
+          {{ post.argument }}
+        &lt;/i>&lt;/p>
+      {% endif %}
+      {{ post.content | xml_escape }}
+    </content>
   </entry>
   {% endif %}
   {% endfor %}
