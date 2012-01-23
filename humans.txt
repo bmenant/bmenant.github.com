@@ -15,4 +15,4 @@
 
 /* TOOLS */
     Softwares: Komodo Edit, Git, Firebug, The Gimp, Inkscape, Trimage Compressor
-    Services: online YUI compressor, fontsquirrel fontface kit creator
+    Services: online YUI compressor, fontsquirrel fontface kit creator, GitHub Pages
