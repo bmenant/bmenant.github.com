@@ -529,7 +529,8 @@ article .personnages {
     article figure {
       margin: 2.25em 0 2em;
     }
-    article i q {
+    article i q,
+    article i strong {
       font-style: normal;
     }
     article .illustration,
