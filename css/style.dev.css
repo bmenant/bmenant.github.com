@@ -183,6 +183,7 @@ body {
  * 1=header
  */
 #header {
+	z-index		: 2;
   margin-top: 1.5em;
 }
   .description {
@@ -215,8 +216,12 @@ body {
  * 2=footer
  */
 #footer {
-  clear   : right;
-  position: relative;
+	z-index						: 1;
+  clear   					: right;
+	background				: rgba(255,255,255,0.8);
+	-moz-box-shadow   : 0 0 3px 3px rgba(255,255,255,0.8);
+	-webkit-box-shadow: 0 0 3px 3px rgba(255,255,255,0.8);
+	box-shadow				: 0 0 3px 3px rgba(255,255,255,0.8);
 }
   #footer h2 {
     font      : normal 2.5em/1 BMBilbaoINC, sans-serif;
@@ -225,7 +230,7 @@ body {
   }
   #footer dl {
     margin-bottom : 1.5em;
-    text-align    : center;
+    text-align    : left;
   }
   #footer > * {
     -moz-transition   : opacity 0.5s;
@@ -769,6 +774,7 @@ article .personnages {
 }
 #footer,
 #header {
+	position	: relative;
   float     : right;
   width     : 38.2%;
   text-align: right;
