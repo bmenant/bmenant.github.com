@@ -1,9 +1,9 @@
 <!-- Site wide header -->
 <header id="header">
   {% if page.url == '/index.html' %}
-  <h1>Le Benj’ Blog</h1>
+  <h1>Schizologues</h1>
   {% else %}
-  <h1><a href="/" title="Page d’accueil">Le Benj’ Blog</a></h1>
+  <h1><a href="/" title="Page d’accueil">Schizologues</a></h1>
   {% endif %}
   <p class="description">Recueil des dialogues de personnages imaginaires qui échangent librement et ouvertement à propos du Web, de tout et de rien… En somme, un blog allégorique d’une schizophrénie ordinaire.</p>
   <nav id="navigation">
@@ -18,8 +18,8 @@
       <!-- To the ATOM feed -->
       <li class="rss"><a href="/index.xml">Abonnement RSS</a></li>
       <!-- To the author Web page -->
-      <li class="perso"><a  href="http://menant-benjamin.fr/" title="Quelques informations à propos de l’auteur">Benj’</a></li>
-      <li id="item-a-propos"><a href="#a-propos" title="Mentions légales et crédits du Benj’ blog">À propos</a></li>
+      <li class="perso"><a  href="http://menant-benjamin.fr/" title="Quelques informations à propos de l’auteur">Benjamin Menant</a></li>
+      <li {% if page.url == '/a-propos/index.html' %} class="active" {% endif %} ><a href="/a-propos" title="Mentions légales et crédits du blog">À propos</a></li>
     </ul>
   </nav>
 </header>

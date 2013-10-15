@@ -31,13 +31,7 @@
   // Get elements and do the thing!
   window.setTimeout(function ()
   {
-    var $item_a_propos  = document.getElementById('item-a-propos'),
-        $goto_a_propos  = $item_a_propos.firstChild,
-        $exit_a_propos  = document.getElementById('exit-a-propos'),
-        $a_propos       = document.getElementById('footer'),
-        exit_a_propos,
-        goto_a_propos,
-        $show_sources = document.getElementById('show-sources'),
+    var $show_sources = document.getElementById('show-sources'),
         $sources      = document.getElementById('sources'),
         $a_sources    = !$sources || $sources.getElementsByTagName('a'),
         show_sources,
@@ -47,18 +41,6 @@
         $disqus_script      = document.getElementById('disqus_script'),
         show_comments,
         check_hash;
-
-    // Footer
-    exit_a_propos = function ()
-    {
-      $item_a_propos.className = $a_propos.className = '';
-    },
-    goto_a_propos = function ()
-    {
-      $item_a_propos.className = $a_propos.className = 'active';
-    };
-    Evt.add($goto_a_propos, 'click', goto_a_propos);
-    Evt.add($exit_a_propos, 'click', exit_a_propos);
 
     // Sources
     if ($show_sources)
@@ -93,13 +75,8 @@
     {
       var _location_hash = document.location.hash;
 
-      // Footer
-      if (_location_hash === '#a-propos')
-      {
-        goto_a_propos();
-      }
       // Sources
-      else if (_location_hash === '#sources')
+      if (_location_hash === '#sources')
       {
         show_sources();
       }
