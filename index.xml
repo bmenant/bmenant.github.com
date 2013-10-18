@@ -28,7 +28,7 @@ layout: nil
     <content type="html">
       {% if post.argument %}
         &lt;p>&lt;i>
-          {{ post.argument }}
+          {{ post.argument | xml_escape }}
         &lt;/i>&lt;/p>
       {% endif %}
       {{ post.content | xml_escape }}
