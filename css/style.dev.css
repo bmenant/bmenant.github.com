@@ -255,7 +255,7 @@ body {
  */
 section#contenu h1 {
   font  : normal 3em/1 BMBilboINC, sans-serif;
-  margin: 1.5em 0 0.75em;
+  margin: 1.5em 0 0.5em;
 }
 section#contenu ul,
 section#contenu li {
@@ -319,6 +319,14 @@ section#contenu li {
  * Post's content
  * 3.2=post
  */
+article h2 {
+  font      : normal 3em/1 BMBilboINC, sans-serif;
+  margin-top: 1em;
+}
+article h3 {
+  font      : normal 1.5em/1 BMBilboINC, sans-serif;
+  margin-top: 1em;
+}
 article h1.argument {
   margin-bottom : 0.167em;
   padding       : 0 0 0.5em;
@@ -867,7 +875,8 @@ article b { display: inline-block; text-indent: -999em; overflow: hidden; backgr
     #header > *,
     #footer > *,
     #contenu > div {
-      margin: 0 5%;
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
     section#contenu h1,
     #footer h2 {
