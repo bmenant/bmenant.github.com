@@ -1,2 +1,2 @@
-permalink: /
+permalink: '/:year/:title'
 pygments: true

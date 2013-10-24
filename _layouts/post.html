@@ -8,7 +8,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-  <title>Le Benj’ Blog, {{ page.title }}</title>
+  <title>{{ page.title }} - Schizologues</title>
   <meta name="description" content="{{ page.description }}" />
 
   <meta name="author" content="Benjamin MENANT" />
@@ -53,10 +53,10 @@
         <small>modifié le <time id="date" datetime="{{ page.update | date: "%Y-%m-%d" }}">{{ page.update | date: "%d/%m/%Y" }}</small>
         {% endif %}
       </p>
-      <address>Par <a class="has-icon" rel="author" href="http://menant-benjamin.fr/">Benj’</a></address>
+      <address>Par <a class="has-icon" rel="author" href="http://menant-benjamin.fr/">Benjamin</a></address>
       <p>
         <span class="visuallyhidden">Sous contrat</span>
-        <a class="creative-commons has-icon" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.fr" title="paternité, pas d’utilisation commerciale, partage à l’identique">Creative Commons</a>
+        <a class="creative-commons has-icon" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.fr" title="paternité, partage à l’identique">Creative Commons</a>
       </p>
       {% if page.sources %}
       <div class="sources" aria-live="off">

@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title>Le Benj’ Blog</title>
+  <title>Schizologues</title>
   <link href="http://blog.menant-benjamin.fr/"/>
   <link type="application/atom+xml" rel="self" href="http://blog.menant-benjamin.fr/index.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -28,7 +28,7 @@ layout: nil
     <content type="html">
       {% if post.argument %}
         &lt;p>&lt;i>
-          {{ post.argument }}
+          {{ post.argument | xml_escape }}
         &lt;/i>&lt;/p>
       {% endif %}
       {{ post.content | xml_escape }}
