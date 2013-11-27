@@ -336,6 +336,9 @@ article q,
 article cite{
     font-style: italic;
 }
+article aside{
+  text-align: center;
+}
 article p.argument {
   margin        : 0.75em 0;
   padding-bottom: 3em;
@@ -706,7 +709,7 @@ article .personnages {
 }
 #footer,
 #header {
-	position	: relative;
+  position  : relative;
   float     : right;
   width     : 38.2%;
   text-align: right;
