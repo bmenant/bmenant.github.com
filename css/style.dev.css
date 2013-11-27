@@ -332,6 +332,10 @@ article h1.argument {
   padding       : 0 0 0.5em;
   background    : url('/assets/filet_24x24.png') 0 100% repeat-x;
 }
+article q,
+article cite{
+    font-style: italic;
+}
 article p.argument {
   margin        : 0.75em 0;
   padding-bottom: 3em;
