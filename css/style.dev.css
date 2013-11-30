@@ -333,7 +333,8 @@ article h1.argument {
   background    : url('/assets/filet_24x24.png') 0 100% repeat-x;
 }
 article q,
-article cite{
+article cite,
+article blockquote {
     font-style: italic;
 }
 article aside{
@@ -421,6 +422,14 @@ article .personnages {
     margin        : 0.75em 0;
     padding-left  : 1.5em;
     padding-right : 1.5em;
+  }
+  article blockquote {
+      padding-left: 3em;
+  }
+  article .blockquote-source {
+    margin-top   : -.75em;
+    padding-left : 7.5em;
+    padding-right: 0;
   }
     /**
      * Répliques
