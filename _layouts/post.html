@@ -11,7 +11,7 @@
   <title>{{ page.title }} - Schizologues</title>
   <meta name="description" content="{{ page.description }}" />
 
-  <meta name="twitter:cards" content="summary" />
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:creator" content="@bmenant" />
   <meta name="twitter:title" content="{{ page.title }}" />
   <meta name="twitter:description" content="{{ page.description }}" />
@@ -55,7 +55,7 @@
       <p>Publié le <time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
         {% if page.update %}
         <span class="visuallyhidden">;</span>
-        <small>modifié le <time id="date" datetime="{{ page.update | date: "%Y-%m-%d" }}">{{ page.update | date: "%d/%m/%Y" }}</small>
+        <small>modifié le <time id="update" datetime="{{ page.update | date: "%Y-%m-%d" }}">{{ page.update | date: "%d/%m/%Y" }}</time></small>
         {% endif %}
       </p>
       <address>Par <a class="has-icon" rel="author" href="http://menant-benjamin.fr/">Benjamin</a></address>
