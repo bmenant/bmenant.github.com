@@ -632,24 +632,6 @@ article .personnages {
     p.showcomments.active a {
       text-decoration: line-through;
     }
-    .showcomments span {
-      float         : right;
-      margin-top    : 1em;
-      font          : 0.333em/2 BMVollkorn, Georgia, serif;
-      text-shadow   : none;
-      text-transform: lowercase;
-      color         : #444;
-      opacity       : 0;
-    }
-      .showcomments span:before {
-        content: '(Les ';
-      }
-      .showcomments span:after {
-        content: ' tous)';
-      }
-    .showcomments.active span {
-      display: none;
-    }
 
   /**
    * Comments
@@ -657,31 +639,6 @@ article .personnages {
    */
   #commentaires {
     min-height: 10em;
-  }
-  .showcomments span {
-    -moz-transition   : all 0.5s;
-    -webkit-transition: all 0.5s;
-    -o-transition     : all 0.5s;
-    -ms-transition    : all 0.5s;
-    transition        : all 0.5s;
-    opacity           : 0;
-  }
-  .ie7 .showcomments span {
-    zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
-  }
-  .ie8 .showcomments span {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
-  }
-  .showcomments:hover span {
-    opacity: 1;
-  }
-  .ie7 .showcomments:hover span {
-    zoom: 0;
-    filter: none;
-  }
-  .ie8 .showcomments:hover span {
-    -ms-filter: "" !important;
   }
 
 /**
