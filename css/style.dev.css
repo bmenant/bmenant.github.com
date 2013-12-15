@@ -526,8 +526,8 @@ article .personnages {
     margin  : 0;
     padding : 0;
   }
-  article footer > p:first-child {
-    float     : left;
+  article footer > div:first-child {
+    float     : right;
     max-width : 50%;
   }
     article footer small {
@@ -544,9 +544,14 @@ article .personnages {
   .has-icon.author:before {
     background-position : 0 -83px;
   }
+  .rss {
+    clear: both;
+    margin-top: 0.75em;
+  }
   .sources {
     clear     : both;
     margin-top: 0.75em;
+    margin-bottom: 1.5em;
     text-align: right;
   }
     .sources p {
@@ -610,7 +615,7 @@ article .personnages {
       }
     #sources.active {
       margin    : 0;
-      max-width : 50%;
+      max-width : 60%;
       max-height: 100%;
       opacity   : 1;
     }

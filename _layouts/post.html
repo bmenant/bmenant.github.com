@@ -72,20 +72,23 @@
     </header>
     {{ content }}
     <footer id="meta">
+      <div>
+        <address>Par <a class="has-icon" rel="author" href="http://menant-benjamin.fr/">Benjamin</a></address>
+        <p>
+          <span class="visuallyhidden">Sous contrat</span>
+          <a class="creative-commons has-icon" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.fr" title="paternité, partage à l’identique">Creative Commons</a>
+        </p>
+      </div>
       <p>Publié le <time id="date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%d/%m/%Y" }}</time>
         {% if page.update %}
         <span class="visuallyhidden">;</span>
         <small>modifié le <time id="update" datetime="{{ page.update | date: "%Y-%m-%d" }}">{{ page.update | date: "%d/%m/%Y" }}</time></small>
         {% endif %}
       </p>
-      <address>Par <a class="has-icon" rel="author" href="http://menant-benjamin.fr/">Benjamin</a></address>
-      <p>
-        <span class="visuallyhidden">Sous contrat</span>
-        <a class="creative-commons has-icon" rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.fr" title="paternité, partage à l’identique">Creative Commons</a>
-      </p>
+      <p class="rss">Vous avez aimé<span class="typo-ph">?</span> <a class="has-icon" href="/index.xml" type="application/atom+xml" rel="alternate">Abonnez-vous</a><span class="typo-ph">!</span>
       {% if page.sources %}
       <div class="sources" aria-live="off">
-        <p id="show-sources">Sources<span class="typo-ph">:</span></p>
+        <p id="show-sources">Afficher les sources<span class="typo-ph">:</span></p>
         <ul id="sources">
           {% for source in page.sources %}
           <li><a href="{{ source[1] }}">{{ source[0] }}</a>{% if forloop.last %}…{% else %}<span class="typo-ph">;</span>{% endif %}</li>
